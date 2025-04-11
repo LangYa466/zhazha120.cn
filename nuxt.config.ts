@@ -7,12 +7,30 @@ export default defineNuxtConfig({
 	ssr: false,
 	srcDir: 'src',
 	modules: [
+		'@nuxt/scripts',
+		'@teages/nuxt-legacy',
 		'@nuxt/content',
 		'@unocss/nuxt',
 		'@vueuse/nuxt',
 		'nuxtjs-naive-ui'
 	],
+	scripts: {
+		registry: {
+			clarity: {
+				id: 'oegssgxsei'
+			}
+		}
+	},
+	legacy: {
+		vite: {
+			targets: ['fully supports proxy'],
+			modernPolyfills: true
+		}
+	},
 	vite: {
+		build: {
+			target: ['esnext']
+		},
 		plugins: [
 			AutoImport({
 				imports: [
