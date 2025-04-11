@@ -20,7 +20,9 @@ const handleClick = (button: typeof information.buttons[0]) => {
 	<n-flex align="center" class="lt-md:(!flex-col [&>*]:w-full)" justify="center">
 		<template v-for="button in information.buttons">
 			<template v-if="(button.type === 'divider')">
-				<n-divider class="!mx-0" vertical/>
+				<div :class="button.class">
+					<n-divider class="!mx-0" vertical/>
+				</div>
 			</template>
 
 			<template v-else>

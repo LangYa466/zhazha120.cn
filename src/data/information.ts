@@ -23,6 +23,7 @@ interface Button extends Contact {
 
 interface Divider {
 	readonly type: 'divider'
+	readonly class: string
 }
 
 interface Record {
@@ -153,7 +154,8 @@ export default {
 			is_external: false
 		},
 		{
-			type: 'divider'
+			type: 'divider',
+			class: 'lt-md:hidden'
 		},
 		{
 			name: '定轨音游段位单曲准度计算器',

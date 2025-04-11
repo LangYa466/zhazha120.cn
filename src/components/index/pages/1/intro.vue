@@ -4,7 +4,9 @@ import information from '~/data/information'
 
 <template>
 	<n-flex align="center" class="lt-md:(!flex-col !justify-center text-center)">
-		<n-image :src="information.avatar" class="size-30 rounded-full transition-(transform duration-500) hover:rotate-360"/>
+		<div class="size-30">
+			<n-image :img-props="{ class: 'size-full' }" :src="information.avatar" class="rounded-full transition-(transform duration-500) hover:rotate-360"/>
+		</div>
 
 		<n-flex :size="0" vertical>
 			<n-h1 class="m-0 fw-extrabold">{{ information.name }}</n-h1>
