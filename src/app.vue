@@ -22,3 +22,7 @@ import { darkTheme, dateZhCN, zhCN } from 'naive-ui'
 		</n-dialog-provider>
 	</n-config-provider>
 </template>
+
+<style lang="scss">
+@use '~/styles/transitions/page';
+</style>

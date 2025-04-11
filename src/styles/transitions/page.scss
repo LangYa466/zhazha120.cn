@@ -1,0 +1,11 @@
+.page {
+	&-enter-active,
+	&-leave-active {
+		@apply transition-(all ease-linear);
+	}
+
+	&-enter-from,
+	&-leave-to {
+		@apply opacity-0 blur;
+	}
+}

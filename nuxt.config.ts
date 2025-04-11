@@ -14,6 +14,13 @@ export default defineNuxtConfig({
 		'@vueuse/nuxt',
 		'nuxtjs-naive-ui'
 	],
+	app: {
+		pageTransition: {
+			name: 'page',
+			mode: 'out-in',
+			appear: true
+		}
+	},
 	scripts: {
 		registry: {
 			clarity: {
