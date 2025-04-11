@@ -28,9 +28,6 @@ export default defineNuxtConfig({
 		}
 	},
 	vite: {
-		build: {
-			target: ['esnext']
-		},
 		plugins: [
 			AutoImport({
 				imports: [

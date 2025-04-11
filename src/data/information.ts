@@ -2,6 +2,7 @@ import { BookOutlined, CalculatorOutlined, FileImageOutlined, GithubOutlined, He
 import { BrandSteam, DeviceGamepad, Paw } from '@vicons/tabler'
 import type { TagProps } from 'naive-ui'
 import { NIcon } from 'naive-ui'
+import avatar from '~/assets/avatar_216d1f4160660919189af01a92dff5f6396a643d.webp?url'
 
 // @unocss-include
 
@@ -46,10 +47,7 @@ interface Information {
 
 export default {
 	name: '渣渣120',
-	avatar: await import('~/assets/avatar_216d1f4160660919189af01a92dff5f6396a643d.webp?url')
-		.then(module => {
-			return module.default
-		}),
+	avatar: avatar,
 	description: ['也许是一名不合格的全栈开发者', '喜欢自动化和新技术'].join('\n'),
 	tags: [
 		{
