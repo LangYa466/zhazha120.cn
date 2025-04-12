@@ -14,13 +14,13 @@
 
 				<index-pages-2-projects/>
 
-				<n-divider>关于此网站</n-divider>
-
-				<index-pages-2-about/>
-
 				<n-divider>好朋友们</n-divider>
 
 				<index-pages-2-friend-links/>
+
+				<n-divider>关于此网站</n-divider>
+
+				<index-pages-2-about/>
 			</n-flex>
 		</div>
 	</div>

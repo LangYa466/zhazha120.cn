@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import information from '~/data/information'
+</script>
+
 <template>
 	<n-layout position="absolute">
 		<n-layout-content class="p-2">
@@ -27,6 +31,3 @@
 		</n-layout-footer>
 	</n-layout>
 </template>
-<script lang="ts" setup>
-import information from '~/data/information.js'
-</script>

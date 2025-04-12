@@ -1,12 +1,6 @@
 import { DownloadOutlined, ProfileOutlined } from '@vicons/antd'
 import { NIcon } from 'naive-ui'
-
-interface Button {
-	readonly name: string
-	readonly href: string
-	readonly icon: () => VNode
-	readonly is_external: boolean
-}
+import type Button from '~/types/button'
 
 interface OsuMania {
 	readonly id: number

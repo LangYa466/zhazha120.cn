@@ -1,14 +1,8 @@
 import { DownloadOutlined, ProfileOutlined } from '@vicons/antd'
 import { NIcon } from 'naive-ui'
+import type Button from '~/types/button'
 
 type Rank = 'z' | 'd' | 'd+' | 'c-' | 'c' | 'c+' | 'b-' | 'b' | 'b+' | 'a-' | 'a' | 'a+' | 's-' | 's' | 's+' | 'ss' | 'u' | 'x' | 'x+'
-
-interface Button {
-	readonly name: string
-	readonly href: string
-	readonly icon: () => VNode
-	readonly is_external: boolean
-}
 
 interface Tetrio {
 	readonly id: string;

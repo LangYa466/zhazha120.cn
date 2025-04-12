@@ -1,20 +1,6 @@
 <script lang="ts" setup>
 import malody from '~/data/malody'
 
-const router = useRouter()
-
-const handleButtonClick = (button: typeof malody.buttons[0]) => {
-	if (!button.is_external) {
-		router.push({
-			path: button.href
-		})
-
-		return
-	}
-
-	showRedirectExternalWebsiteWarningModal(button.href)
-}
-
 const passed_dan_order = ref('dan')
 
 const passed_dans = computed(() => {
@@ -80,13 +66,7 @@ const passed_dans = computed(() => {
 		<template #footer>
 			<n-flex align="center" class="lt-md:!flex-col">
 				<template v-for="button in malody.buttons">
-					<n-button @click="handleButtonClick(button)">
-						<template #icon>
-							<Component :is="button.icon()"/>
-						</template>
-
-						{{ button.name }}
-					</n-button>
+					<custom-button v-bind="button"/>
 				</template>
 			</n-flex>
 		</template>

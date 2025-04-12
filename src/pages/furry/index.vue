@@ -25,7 +25,7 @@ const handleClick = (code: string) => {
 					<template v-for="furry in furries">
 						<div class="transition-(transform duration-150) hover:scale-105 cursor-pointer" @click="handleClick(furry.code)">
 							<n-flex vertical>
-								<n-image :img-props="{ class: 'w-60' }" :src="loadAsset(`furry_${furry.image_hash}`).value"/>
+								<n-image :img-props="{ class: 'w-60' }" :src="loadAsset(`furry_${furry.image_hash}`).value" preview-disabled/>
 
 								<n-flex :size="0" align="center" justify="center">
 									<n-text>{{ furry.name }}</n-text>

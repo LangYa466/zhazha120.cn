@@ -26,20 +26,6 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 
 	return `https://tetr.fires.bz/overlay/user?${query}`
 }
-
-const router = useRouter()
-
-const handleButtonClick = (button: typeof tetrio.buttons[0]) => {
-	if (!button.is_external) {
-		router.push({
-			path: button.href
-		})
-
-		return
-	}
-
-	showRedirectExternalWebsiteWarningModal(button.href)
-}
 </script>
 
 <template>
@@ -134,13 +120,7 @@ const handleButtonClick = (button: typeof tetrio.buttons[0]) => {
 		<template #footer>
 			<n-flex align="center" class="lt-md:!flex-col">
 				<template v-for="button in tetrio.buttons">
-					<n-button @click="handleButtonClick(button)">
-						<template #icon>
-							<Component :is="button.icon()"/>
-						</template>
-
-						{{ button.name }}
-					</n-button>
+					<custom-button v-bind="button"/>
 				</template>
 			</n-flex>
 		</template>

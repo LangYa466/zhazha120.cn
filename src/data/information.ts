@@ -1,29 +1,15 @@
-import { BookOutlined, CalculatorOutlined, FileImageOutlined, GithubOutlined, HeartOutlined, MailOutlined, QqOutlined, UsergroupAddOutlined } from '@vicons/antd'
+import { CalculatorOutlined, FileImageOutlined, GithubOutlined, HeartOutlined, MailOutlined, QqOutlined, UsergroupAddOutlined } from '@vicons/antd'
 import { BrandSteam, DeviceGamepad, Paw } from '@vicons/tabler'
 import type { TagProps } from 'naive-ui'
 import { NIcon } from 'naive-ui'
 import avatar from '~/assets/avatar_216d1f4160660919189af01a92dff5f6396a643d.webp?url'
+import type Button from '~/types/button'
 
 // @unocss-include
 
 interface Tag {
 	readonly type: TagProps['type']
 	readonly content: string
-}
-
-interface Contact {
-	readonly name: string
-	readonly href: string
-	readonly icon: () => VNode
-}
-
-interface Button extends Contact {
-	readonly is_external: boolean
-}
-
-interface Divider {
-	readonly type: 'divider'
-	readonly class: string
 }
 
 interface Record {
@@ -38,8 +24,9 @@ interface Information {
 	readonly description: string
 
 	readonly tags: Tag[]
-	readonly contacts: Contact[]
-	readonly buttons: (Button | Divider)[]
+	readonly contacts: Button[]
+	readonly buttons: Button[]
+	readonly tools: Button[]
 
 	readonly codetime_id: number | null
 
@@ -74,42 +61,48 @@ export default {
 			href: 'https://wpa.qq.com/msgrd?v=3&uin=2331281251',
 			icon: () => h(NIcon, {
 				component: QqOutlined
-			})
+			}),
+			is_external: true
 		},
 		{
 			name: '邮箱',
 			href: 'mailto:contact@zhazha120.cn',
 			icon: () => h(NIcon, {
 				component: MailOutlined
-			})
+			}),
+			is_external: true
 		},
 		{
 			name: '网易云音乐',
 			href: 'https://music.163.com/#/user/home?id=634000521',
 			icon: () => h('div', {
 				class: 'i-tabler:brand-netease-music scale-90'
-			})
+			}),
+			is_external: true
 		},
 		{
 			name: 'Steam',
 			href: 'https://steamcommunity.com/u/WOSHIZHAZHA120',
 			icon: () => h(NIcon, {
 				component: BrandSteam
-			})
+			}),
+			is_external: true
 		},
 		{
 			name: '哔哩哔哩',
 			href: 'https://space.bilibili.com/24267334',
 			icon: () => h('div', {
 				class: 'i-simple-icons:bilibili scale-90'
-			})
+			}),
+			is_external: true
 		},
 		{
 			name: 'Github',
 			href: 'https://github.com/WOSHIZHAZHA120',
 			icon: () => h(NIcon, {
 				component: GithubOutlined
-			})
+			}),
+			is_external: true
 		}
 	],
 	buttons: [
@@ -130,14 +123,6 @@ export default {
 			is_external: false
 		},
 		{
-			name: '博客',
-			href: '/blog',
-			icon: () => h(NIcon, {
-				component: BookOutlined
-			}),
-			is_external: false
-		},
-		{
 			name: '游戏',
 			href: '/game',
 			icon: () => h(NIcon, {
@@ -152,11 +137,9 @@ export default {
 				component: Paw
 			}),
 			is_external: false
-		},
-		{
-			type: 'divider',
-			class: 'lt-md:hidden'
-		},
+		}
+	],
+	tools: [
 		{
 			name: '定轨音游段位单曲准度计算器',
 			href: '/tools/accuracy-calculator',
