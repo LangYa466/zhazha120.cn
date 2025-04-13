@@ -23,6 +23,11 @@ export default [
 	},
 	{
 		type: 'github',
+		description: 'BitterSweet',
+		repository: ['c794b7b0331e4cf3', 'BitterSweetNext'].join('/')
+	},
+	{
+		type: 'github',
 		description: 'Techmino 在线词典',
 		repository: ['26F-Studio', 'techmino-online-dict'].join('/')
 	},

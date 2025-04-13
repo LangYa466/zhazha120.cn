@@ -21,7 +21,7 @@ const handleClick = (code: string) => {
 			<custom-page-header/>
 
 			<n-card size="small">
-				<n-flex align="center">
+				<n-flex align="center" class="lt-sm:(!flex-col items-center)">
 					<template v-for="furry in furries">
 						<div class="transition-(transform duration-150) hover:scale-105 cursor-pointer" @click="handleClick(furry.code)">
 							<n-flex vertical>

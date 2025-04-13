@@ -4,7 +4,7 @@ import information from '~/data/information'
 
 <template>
 	<n-flex align="center" class="lt-md:(!flex-col !justify-center text-center)">
-		<div class="size-30">
+		<div class="size-25">
 			<n-image :img-props="{ class: 'size-full' }" :src="information.avatar" class="rounded-full transition-(transform duration-500) hover:rotate-360"/>
 		</div>
 
