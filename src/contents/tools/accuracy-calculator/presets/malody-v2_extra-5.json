@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 5",
+	"maps": [
+		{
+			"title": "Goreshit - Satori de Pon! [MintApril_]",
+			"notes": 3229
+		},
+		{
+			"title": "remixed celas - Legend of Seeker [Ycloki]",
+			"notes": 2731
+		},
+		{
+			"title": "秋山 澪 - 水晶世界 ～Fracture～ [MintApril_]",
+			"notes": 2561
+		},
+		{
+			"title": "ZUN remixed by LeaF - Wizdomiot [Satori]",
+			"notes": 2109
+		}
+	],
+	"require_accuracy": 96
+}

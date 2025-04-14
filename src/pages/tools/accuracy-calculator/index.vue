@@ -1,6 +1,14 @@
 <script lang="ts" setup>
+import type Preset from '~/types/tools/accuracy-calculator/preset'
+
 definePageMeta({
 	name: '定轨音游段位单曲准度计算器'
+})
+
+const data = ref<Preset>({
+	name: '',
+	maps: [],
+	require_accuracy: 100
 })
 </script>
 
@@ -9,11 +17,14 @@ definePageMeta({
 		<n-flex vertical>
 			<custom-page-header/>
 
-			<n-card size="small">
-				<div class="text-(2xl center)">
-					还在咕 别着急 !
-				</div>
-			</n-card>
+			<n-flex :wrap="false" class="lt-md:!flex-col-reverse">
+				<n-flex class="md:min-w-1/2" vertical>
+					<tools-accuracy-calculator-presets v-model:value="data"/>
+					<tools-accuracy-calculator-editor v-model:value="data"/>
+				</n-flex>
+
+				<tools-accuracy-calculator-results v-model:value="data"/>
+			</n-flex>
 		</n-flex>
 	</div>
 </template>

@@ -49,4 +49,4 @@ export default [
 		avatar_id: 156998119,
 		description: 'Paw Team Club'
 	}
-] satisfies Organization
+] satisfies Organization[]

@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Regular 10",
+	"maps": [
+		{
+			"title": "飛燕草 (Hiensou) // Hinaka_Yuki",
+			"notes": 2034
+		},
+		{
+			"title": "Rocky Buinne // teradora",
+			"notes": 1740
+		},
+		{
+			"title": "月哀·月夜 (Yue Ai Yue Ye) // YuzakiNASB",
+			"notes": 2270
+		},
+		{
+			"title": "Spin Eternally // Oekakizuki",
+			"notes": 2166
+		}
+	],
+	"require_accuracy": 95
+}

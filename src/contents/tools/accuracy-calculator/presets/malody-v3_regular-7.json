@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Regular 7",
+	"maps": [
+		{
+			"title": "Don't Stop The Music // 7912",
+			"notes": 1701
+		},
+		{
+			"title": "Six Acid Strings // Mipha-",
+			"notes": 1799
+		},
+		{
+			"title": "∀rkadia [Illusion] (1.05x) // Oekakizuki",
+			"notes": 2132
+		},
+		{
+			"title": "Valkyrie Revolutia // OxalicAcid vs. Hylotl",
+			"notes": 1899
+		}
+	],
+	"require_accuracy": 95
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Regular 3",
+	"maps": [
+		{
+			"title": "恋ひ恋ふ縁 (Koi Kou Enishi) // DongShaoZhou",
+			"notes": 1055
+		},
+		{
+			"title": "お願い！コンコンお稲荷さま (Onegai! Kon on Oinari-sama) // Endermeng",
+			"notes": 1489
+		},
+		{
+			"title": "The Last Page // Oekakizuki vs. Hylotl",
+			"notes": 1288
+		},
+		{
+			"title": "星が降らない街 (Hoshi ga Furanai Machi) // Hylotl",
+			"notes": 1789
+		}
+	],
+	"require_accuracy": 95
+}

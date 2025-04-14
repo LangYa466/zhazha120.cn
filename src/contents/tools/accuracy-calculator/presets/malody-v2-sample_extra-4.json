@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Sample Extra 4",
+	"maps": [
+		{
+			"title": "Horie Yui - The World's End (BPM*1.15) [teradora]",
+			"notes": 1738
+		},
+		{
+			"title": "Neru Feat. Kogeinu Akatin - Law-evading Rock (BPM*1.05) [Xing_Ren]",
+			"notes": 1876
+		},
+		{
+			"title": "onoken - P8107 (BPM*0.95) [Rita-]",
+			"notes": 2079
+		},
+		{
+			"title": "Frums - We Want to Run (BPM*1.01) [tera]",
+			"notes": 2008
+		}
+	],
+	"require_accuracy": 96
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Extra 4",
+	"maps": [
+		{
+			"title": "ZENITHALIZE // Hinaka_Yuki",
+			"notes": 2634
+		},
+		{
+			"title": "Asymmetrical Grooves // tera",
+			"notes": 2212
+		},
+		{
+			"title": "Pure Ruby // Hylotl",
+			"notes": 2336
+		},
+		{
+			"title": "EVERLASTING HAPPiNESS↑ // crazyImmortals",
+			"notes": 2602
+		}
+	],
+	"require_accuracy": 96
+}

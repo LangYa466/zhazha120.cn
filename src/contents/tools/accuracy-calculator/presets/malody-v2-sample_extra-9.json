@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Sample Extra 9",
+	"maps": [
+		{
+			"title": "SKAN - Give It to Dem (feat. Highdiwaan & Drama B) (Edited) (BPM*1.14) [thoAltum]",
+			"notes": 2828
+		},
+		{
+			"title": "Silentroom - Shuu no hazama (BPM*1.12) (Cut) [teradora]",
+			"notes": 3663
+		},
+		{
+			"title": "Liet. - Shut your yap (BPM*1.133) [-Reot-]",
+			"notes": 2865
+		},
+		{
+			"title": "sak + wellow - #curtaincall (BPM*1.332) [Remeslo]",
+			"notes": 2777
+		}
+	],
+	"require_accuracy": 96
+}

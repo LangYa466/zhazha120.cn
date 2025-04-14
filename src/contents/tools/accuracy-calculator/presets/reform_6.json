@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform 6",
+	"maps": [
+		{
+			"title": "Dekatora - Sweet & Sweet Cherry X (Golgo13/Sensationer) [SMOC 8TH]",
+			"notes": 1487
+		},
+		{
+			"title": "Terminal11 - The Bird’s Midair Heatstroke (samurai7654) [Rebound Dump Collection Megapack I] {cut}",
+			"notes": 1266
+		},
+		{
+			"title": "t+pazolite - Luv * Lab * Poison 22ate! (CBR x Choof) [Nuclear Blast 5] {cut}",
+			"notes": 1378
+		},
+		{
+			"title": "Musical Masterpiece - M-A (IcyWorld) [Nuclear Blast 4]",
+			"notes": 2186
+		}
+	],
+	"require_accuracy": 96
+}

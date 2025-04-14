@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Regular 2",
+	"maps": [
+		{
+			"title": "HHHxMMxST - Follow Tomorrow [Emiria]",
+			"notes": 1152
+		},
+		{
+			"title": "Amberry - Bronze Coffin [Potassium]",
+			"notes": 850
+		},
+		{
+			"title": "polysha - 炯眼の絶対零度 [Critical_Star]",
+			"notes": 950
+		},
+		{
+			"title": "Ryu* - Sakura Mirage [Spy]",
+			"notes": 969
+		}
+	],
+	"require_accuracy": 95
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 9 v1.75",
+	"maps": [
+		{
+			"title": "Ryu* Feat. 森永真由美 - Din Don Dan (BPM*1.3) [XingRen]",
+			"notes": 4427
+		},
+		{
+			"title": "Silentroom - 驟雨の狹間 (BPM*1.15) [teradora vs. Karuta]",
+			"notes": 3660
+		},
+		{
+			"title": "▼8Ы$Ŧ∆8Ќ∆_ ĜР∑χØ฿▼ - $ØRRY (BPM*1.4) [teradora]",
+			"notes": 4323
+		},
+		{
+			"title": "Silvia - VERTEX GAMMA [XingRen vs. teradora]",
+			"notes": 3044
+		}
+	],
+	"require_accuracy": 96
+}

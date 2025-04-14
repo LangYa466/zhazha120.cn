@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Regular 7",
+	"maps": [
+		{
+			"title": "Y - fairy stage [AkagiPh]",
+			"notes": 1909
+		},
+		{
+			"title": "BlackY vs. Yooh - XROSS INFECTION [Vish]",
+			"notes": 1814
+		},
+		{
+			"title": "niki feat. YURiCa - WAVE [Skwid]",
+			"notes": 1777
+		},
+		{
+			"title": "xi - Blue Zeinth (Cut) [|zenX|]",
+			"notes": 2681
+		}
+	],
+	"require_accuracy": 95
+}

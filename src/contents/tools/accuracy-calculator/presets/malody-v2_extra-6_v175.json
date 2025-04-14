@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 6 v1.75",
+	"maps": [
+		{
+			"title": "洪流之源 - 鼠鼠生风 (BPM*1.15) [drunkenstein]",
+			"notes": 2504
+		},
+		{
+			"title": "SP-# - corneal (BPM*1.15) [AkagiPh]",
+			"notes": 2027
+		},
+		{
+			"title": "Dubmood - Sucker For Arpeggios [XingRen]",
+			"notes": 2444
+		},
+		{
+			"title": "DJ Sharpnel - Tactical railroad (cut) (BPM*1.3) [MintApril_]",
+			"notes": 3526
+		}
+	],
+	"require_accuracy": 96
+}

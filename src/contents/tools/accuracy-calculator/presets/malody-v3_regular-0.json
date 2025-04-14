@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Regular 0",
+	"maps": [
+		{
+			"title": "生きとし生けるもの (Ikitoshi Ikerumono) // Promiii",
+			"notes": 492
+		},
+		{
+			"title": "Rambling Pleat // boomushroom",
+			"notes": 529
+		},
+		{
+			"title": "一梦千霄 (Yi Meng Qian Xiao) // DongShaoZhou",
+			"notes": 595
+		},
+		{
+			"title": "White Eternity // tkdkendo",
+			"notes": 681
+		}
+	],
+	"require_accuracy": 95
+}

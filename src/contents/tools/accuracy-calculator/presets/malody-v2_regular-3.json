@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Regular 3",
+	"maps": [
+		{
+			"title": "Feryquitous - Quon [Ashley]",
+			"notes": 1169
+		},
+		{
+			"title": "2th - 原曲を切り刻む- [Ashley]",
+			"notes": 1143
+		},
+		{
+			"title": "wa. remixed celas - 銀の風 [Marirose]",
+			"notes": 974
+		},
+		{
+			"title": "JurokuNeta. - Adjudicatorz-断罪- [teradora]",
+			"notes": 1347
+		}
+	],
+	"require_accuracy": 95
+}

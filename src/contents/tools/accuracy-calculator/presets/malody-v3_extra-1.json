@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Extra 1",
+	"maps": [
+		{
+			"title": "Scorpion Dance // XingRen",
+			"notes": 1952
+		},
+		{
+			"title": "大輪の魂 (Tailin no Soul) (1.2x) // Oekakizuki",
+			"notes": 2013
+		},
+		{
+			"title": "永夜のパレード (Eiya no Parade) (1.05x) // Houraisan Kaguya",
+			"notes": 1953
+		},
+		{
+			"title": "音速宇宙旅行 (Onsoku Uchuu Ryokou) // tera",
+			"notes": 2111
+		}
+	],
+	"require_accuracy": 96
+}

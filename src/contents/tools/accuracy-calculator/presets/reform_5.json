@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform 5",
+	"maps": [
+		{
+			"title": "r300k - Energy Flower 3007 (Shoegazer) [6236]",
+			"notes": 1293
+		},
+		{
+			"title": "The Ghost Of 3.13 - Last Star in the Universe (Wiosna) [Yolomania 3]",
+			"notes": 1722
+		},
+		{
+			"title": "DJ'TEKINA//SOMETHING - Palette GAMMA (Cadmium-113) [Abstract]",
+			"notes": 1632
+		},
+		{
+			"title": "DJ Noriken - Elektric U-Phoria (IcyWorld) [Yolomania 4]",
+			"notes": 1903
+		}
+	],
+	"require_accuracy": 96
+}

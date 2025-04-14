@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Regular 9",
+	"maps": [
+		{
+			"title": "機械少女幻想 (Kikai Shoujo Gensou) // Hylotl",
+			"notes": 2374
+		},
+		{
+			"title": "cold planet // Hinaka_Yuki",
+			"notes": 1889
+		},
+		{
+			"title": "stray star // Sorakaru_",
+			"notes": 2142
+		},
+		{
+			"title": "Unleashed World // Amekaze",
+			"notes": 1810
+		}
+	],
+	"require_accuracy": 95
+}

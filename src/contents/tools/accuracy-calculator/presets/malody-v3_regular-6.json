@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Regular 6",
+	"maps": [
+		{
+			"title": "チョコレイト・ディスコ (Chocolate Disco) // Oekakizuki",
+			"notes": 1694
+		},
+		{
+			"title": "Call Me, Beep Me (If You Wanna Reap Me) // DongShaoZhou",
+			"notes": 1636
+		},
+		{
+			"title": "DIE IN THE SEA // XingRen",
+			"notes": 1803
+		},
+		{
+			"title": "unhappy century // tera",
+			"notes": 2115
+		}
+	],
+	"require_accuracy": 95
+}

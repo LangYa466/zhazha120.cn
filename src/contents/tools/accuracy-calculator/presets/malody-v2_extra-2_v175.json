@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 2 v1.75",
+	"maps": [
+		{
+			"title": "Goreshit - chiyopop? [XingRen]",
+			"notes": 1944
+		},
+		{
+			"title": "Camellia vs Expander - 紫陽花 -AZISAI- [AZVW_2]",
+			"notes": 2024
+		},
+		{
+			"title": "Nightcore - Take my hand (BPM*1.2) [XingRen]",
+			"notes": 2561
+		},
+		{
+			"title": "dj TAKA feat. flare - message (Cut) [Linger]",
+			"notes": 3089
+		}
+	],
+	"require_accuracy": 96
+}

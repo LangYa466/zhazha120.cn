@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform 10",
+	"maps": [
+		{
+			"title": "yst - The Lost Dedicated. (Zyph/Jumpstream Japan) [OLD EASY VERSION]",
+			"notes": 1906
+		},
+		{
+			"title": "DEV/NULL - Rave 7 (hi19hi19) [hi19hi19 2 - Dumps and Hard stuff] {1.1x}",
+			"notes": 1460
+		},
+		{
+			"title": "YMCK - Oh Curry! (kaiten123) [kaiten dumbstream 2] {0.9x // cut // A.K.A. Kare Dayo! v. Dumbstreamz}",
+			"notes": 1723
+		},
+		{
+			"title": "Sia - Chandelier ~aoredit~ (_underjoy) [Yolomania 4]",
+			"notes": 2392
+		}
+	],
+	"require_accuracy": 96
+}

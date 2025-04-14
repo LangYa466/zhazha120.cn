@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform 9",
+	"maps": [
+		{
+			"title": "Jessica Jay - Can’t take my eyes off you (Golgo13/Sensationer) [SMOC 8TH]",
+			"notes": 2114
+		},
+		{
+			"title": "Igorrr - Cicadidae (Minty) [Minty Fresh Pack 1]",
+			"notes": 2070
+		},
+		{
+			"title": "DJ Banzai - Disconnected Trance (Gammablaster) [HSMP12]",
+			"notes": 1674
+		},
+		{
+			"title": "ueotan - Firmament Castle “Velier” (hi19hi19) [hi19hi19 3 - Popcorn Blast] {1.05x}",
+			"notes": 2272
+		}
+	],
+	"require_accuracy": 96
+}

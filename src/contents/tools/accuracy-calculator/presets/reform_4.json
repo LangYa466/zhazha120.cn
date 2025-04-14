@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform 4",
+	"maps": [
+		{
+			"title": "Andrew W.K - It's Time To Party!! (IcyWorld) [Rebound Dump Collection Megapack]",
+			"notes": 905
+		},
+		{
+			"title": "hyi - Ephemera (rCaliberGX/Fullerene-) [Yolomania 3]",
+			"notes": 1499
+		},
+		{
+			"title": "w_tre - Shannon’s Theorem (hi19hi19) [hi19hi19 4 - Modern Keyboardsmash]",
+			"notes": 1283
+		},
+		{
+			"title": "Alex c. feat. Yasmin K. - Angel of Darkness (Leo137) [Yolomania 3]",
+			"notes": 2071
+		}
+	],
+	"require_accuracy": 96
+}

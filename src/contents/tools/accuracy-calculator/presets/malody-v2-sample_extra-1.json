@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Sample Extra 1",
+	"maps": [
+		{
+			"title": "Litmus* - Scorpion Dance [Xing_Ren]",
+			"notes": 1952
+		},
+		{
+			"title": "Luo Tianyi - Luoshui Tianyi (BPM*1.03) [Xing_Ren & SnowPh]",
+			"notes": 2316
+		},
+		{
+			"title": "Freestylo - Dope Monkeys (Hardstyle Remix) (BPM*1.02) [Xingyue]",
+			"notes": 2098
+		},
+		{
+			"title": "ETIA. feat. Jenga - Say A Vengeance (BPM*1.216) [Xingyue]",
+			"notes": 2048
+		}
+	],
+	"require_accuracy": 96
+}

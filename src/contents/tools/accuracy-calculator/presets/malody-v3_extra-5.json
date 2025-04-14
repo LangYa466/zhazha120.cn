@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Extra 5",
+	"maps": [
+		{
+			"title": "Bring Our Ignition Back (1.1x) // Oekakizuki",
+			"notes": 2734
+		},
+		{
+			"title": "雲散霧消 // hinako1804",
+			"notes": 2417
+		},
+		{
+			"title": "えれくとりっく・えんじぇぅ (Electric Angel) (1.2x) // Sorakaru_ vs. Hinaka_Yuki",
+			"notes": 3089
+		},
+		{
+			"title": "穢れなき薔薇十字 (Kegare Naki Bara Juuji) // MintApril_",
+			"notes": 2974
+		}
+	],
+	"require_accuracy": 96
+}

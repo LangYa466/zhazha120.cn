@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Extra 3",
+	"maps": [
+		{
+			"title": "Edison (1.15x) // Hinaka_Yuki",
+			"notes": 2518
+		},
+		{
+			"title": "INTERNET OVERDOSE (1.05x) // Hylotl",
+			"notes": 2636
+		},
+		{
+			"title": "Euthanasia (1.05x) // tera",
+			"notes": 2326
+		},
+		{
+			"title": "Fin.ArcDeaR // Amekaze",
+			"notes": 2511
+		}
+	],
+	"require_accuracy": 96
+}

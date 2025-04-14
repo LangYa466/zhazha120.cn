@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform 2",
+	"maps": [
+		{
+			"title": "Dollscythe - Flashes (ZZHBOY) [CS’ Hyper]",
+			"notes": 1107
+		},
+		{
+			"title": "Remo-con - Vermillion (HOBIT) [SMOC 8TH] DD EDIT",
+			"notes": 905
+		},
+		{
+			"title": "Yooh - Snow Storm -euphoria- (raediaufar) [ADVANCED] DD EDIT",
+			"notes": 955
+		},
+		{
+			"title": "Colorful Sounds Port - Eternal Drain (Wh1teh) [Hyper]",
+			"notes": 1487
+		}
+	],
+	"require_accuracy": 96
+}

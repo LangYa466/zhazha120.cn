@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 4",
+	"maps": [
+		{
+			"title": "かめりあfeat.ななひろ - イーディーエム・ジャンパーズ(Cut) [Rachel]",
+			"notes": 2731
+		},
+		{
+			"title": "nitro - [line-epsilon] [XingRen]",
+			"notes": 2653
+		},
+		{
+			"title": "t+pazolite - Contrapasso -paradiso- [Peachhh]",
+			"notes": 2033
+		},
+		{
+			"title": "DI Genki vs かめりあ feat. Moimoi - YELL! (Cut) [Rachel]",
+			"notes": 2796
+		}
+	],
+	"require_accuracy": 96
+}

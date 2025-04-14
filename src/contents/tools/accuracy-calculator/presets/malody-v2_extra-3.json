@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 3",
+	"maps": [
+		{
+			"title": "INNOCENT NOIZE - Jumble Rumble [Peachhh]",
+			"notes": 2327
+		},
+		{
+			"title": "Cres / air - End Time [TechnoBreak] (1.1x) [MintApril_]",
+			"notes": 1593
+		},
+		{
+			"title": "Cardboard Box - ++ [Vish]",
+			"notes": 2166
+		},
+		{
+			"title": "m108 - *Crow Solace* [[Crz]Derrick]",
+			"notes": 2200
+		}
+	],
+	"require_accuracy": 96
+}

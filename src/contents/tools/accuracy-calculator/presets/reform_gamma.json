@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform γ",
+	"maps": [
+		{
+			"title": "The Quick Brown Fox - Break (beary605) [Smash] {1.1x}",
+			"notes": 1973
+		},
+		{
+			"title": "Camellia - Fastest Crash (Shoegazer) [Paroxysm] {cut}",
+			"notes": 1980
+		},
+		{
+			"title": "Hige Driver - Reflec Streamz (ATTang) [ATTang’s Dumpmix]",
+			"notes": 1429
+		},
+		{
+			"title": "DJ Sharpnel - We Luv Lama (IcyWorld) [Nuclear Blast 4] {1.2x // cut}",
+			"notes": 3979
+		}
+	],
+	"require_accuracy": 96
+}

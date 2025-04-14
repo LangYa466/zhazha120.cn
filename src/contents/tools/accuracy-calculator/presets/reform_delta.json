@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform δ",
+	"maps": [
+		{
+			"title": "CROOVE - Aquaris (snoverpk) [Wanderer] {1.3x}",
+			"notes": 2018
+		},
+		{
+			"title": "Studio EIM - Crescent Moon Island Boss Battle (Shoegazer) [Kuro] {1.05x}",
+			"notes": 2711
+		},
+		{
+			"title": "DETRO - Volcanic (ATTang) [ATTang’s Bad Files]",
+			"notes": 3268
+		},
+		{
+			"title": "DJ Sharpnel - Future Dominators (IcyWorld) [NBJS4] {1.3x // cut}",
+			"notes": 2629
+		}
+	],
+	"require_accuracy": 96
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform β",
+	"maps": [
+		{
+			"title": "MoriMori Atsushi - Paradigm Shift (Hydria) [MDx2v5]",
+			"notes": 2274
+		},
+		{
+			"title": "Camellia - Blue Planet (Shoegazer) [Terra]",
+			"notes": 2308
+		},
+		{
+			"title": "The Queenstons - Amber Starlight, Don't Fall (IcyWorld) [NBJS5] {cut}",
+			"notes": 1740
+		},
+		{
+			"title": "Jeff Williams - Time To say Goodbye (feat. Casey Lee Williams) (Halogen-) [Farewell] {cut}",
+			"notes": 2301
+		}
+	],
+	"require_accuracy": 96
+}

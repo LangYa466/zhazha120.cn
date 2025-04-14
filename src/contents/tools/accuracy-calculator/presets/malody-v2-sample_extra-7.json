@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Sample Extra 7",
+	"maps": [
+		{
+			"title": "Umezato - Paranoia (Cut) (BPM*1.3) [MintApril_]",
+			"notes": 2339
+		},
+		{
+			"title": "Nightmare – Boulafacet [Xing_Ren]",
+			"notes": 2461
+		},
+		{
+			"title": "ZOMiG - Lalala.Refrain (BPM*1.1) [SnowPh]",
+			"notes": 2142
+		},
+		{
+			"title": "katagiri - Strong 280 [teradora]",
+			"notes": 3167
+		}
+	],
+	"require_accuracy": 96
+}

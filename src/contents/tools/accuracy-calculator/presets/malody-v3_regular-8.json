@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Regular 8",
+	"maps": [
+		{
+			"title": "Don’t let you down // OxalicAcid vs. crazyImmortals",
+			"notes": 2237
+		},
+		{
+			"title": "夜に駆ける (Yoru ni Kakeru) (1.05x) // tera",
+			"notes": 2081
+		},
+		{
+			"title": "Snow Veil -少女と獣の森- // MACKEREL",
+			"notes": 2280
+		},
+		{
+			"title": "ポジティブ☆ダンスタイム (Positive Dance Time) // Hinaka_Yuki",
+			"notes": 2000
+		}
+	],
+	"require_accuracy": 95
+}

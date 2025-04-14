@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra Final",
+	"maps": [
+		{
+			"title": "fripside - Only my railgun (BPM*1.33) [XingRen]",
+			"notes": 3468
+		},
+		{
+			"title": "Incinerate - -purgatorium- (BPM*1.14) [tera vs. Cyrillic]",
+			"notes": 3335
+		},
+		{
+			"title": "xi - Blue Zenith (BPM*1.15) [MintApril]",
+			"notes": 3698
+		},
+		{
+			"title": "Yoko Kanno - Inner Universe (BPM*1.45) [tera]",
+			"notes": 5061
+		}
+	],
+	"require_accuracy": 96
+}

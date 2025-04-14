@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Sample Extra 6",
+	"maps": [
+		{
+			"title": "shiki - Sepia (BPM*1.15) [Xing_Ren]",
+			"notes": 1766
+		},
+		{
+			"title": "Kobaryo - Bookmaker (Cut) [teradora]",
+			"notes": 2525
+		},
+		{
+			"title": "xi - Ascension to Heaven (BPM*0.975) (Cut) [MintApril_]",
+			"notes": 2167
+		},
+		{
+			"title": "syatten remixed by celas - Bird Sprite -Hikari no kakusei- (BPM*1.4) (Cut) [Cyrillic]",
+			"notes": 3214
+		}
+	],
+	"require_accuracy": 96
+}

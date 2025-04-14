@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Regular 2",
+	"maps": [
+		{
+			"title": "Stargazer // Mipha-",
+			"notes": 1397
+		},
+		{
+			"title": "Seyana. (何でも言うことを聞いてくれアカネチャン) // boomushroom",
+			"notes": 1090
+		},
+		{
+			"title": "Love Emotion! // Yashiro-",
+			"notes": 805
+		},
+		{
+			"title": "Mermaid Girl // Ts27",
+			"notes": 1212
+		}
+	],
+	"require_accuracy": 95
+}

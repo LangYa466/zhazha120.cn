@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Extra Final",
+	"maps": [
+		{
+			"title": "Infinity Heaven // tera",
+			"notes": 2828
+		},
+		{
+			"title": "NEURO-CLOUD-9 // tera",
+			"notes": 3362
+		},
+		{
+			"title": "キズアト (Kizuato) (1.3x) // tera",
+			"notes": 3393
+		},
+		{
+			"title": "Runengon // tera",
+			"notes": 5100
+		}
+	],
+	"require_accuracy": 96
+}

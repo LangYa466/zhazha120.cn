@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Regular 4",
+	"maps": [
+		{
+			"title": "Cuvelia - 天空の夜明け [ZZHBOY]",
+			"notes": 1400
+		},
+		{
+			"title": "削除 - VALLISTA [liaoxingyao]",
+			"notes": 1402
+		},
+		{
+			"title": "秋山 澪 - 水晶世界 ～Fracture～ [ExNeko]",
+			"notes": 1685
+		},
+		{
+			"title": "姉ヶ崎寧々 - ZENITHALIZE [Alwaysover]",
+			"notes": 1599
+		}
+	],
+	"require_accuracy": 95
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Sample Extra 8",
+	"maps": [
+		{
+			"title": "Est - Angelic Snow (BPM*1.1) [zino]",
+			"notes": 2647
+		},
+		{
+			"title": "SOOOO – iiillluuuvvvUUU (BPM*1.122) (Cut) [Literia]",
+			"notes": 3253
+		},
+		{
+			"title": "ROKINA - Kimi to bokueno sousouka [apse_]",
+			"notes": 3204
+		},
+		{
+			"title": "Sun3 - Perfect Cherry Storm (BPM*1.45) [teradora]",
+			"notes": 4046
+		}
+	],
+	"require_accuracy": 96
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform α",
+	"maps": [
+		{
+			"title": "SAMBA MASTER -SATOH- - Dark Sambaland (Seiryuu) [Jack Dumps]",
+			"notes": 2265
+		},
+		{
+			"title": "U2 Akiyama - Odoru Mizushibuki (Shoegazer) [Macabre] {1.1x}",
+			"notes": 1528
+		},
+		{
+			"title": "Jea - Makiba (ilikexd) [Fullerene Shift]",
+			"notes": 2300
+		},
+		{
+			"title": "Vaenus - LazorBeamz (Evening) [CHALLENGE 006]",
+			"notes": 3334
+		}
+	],
+	"require_accuracy": 96
+}

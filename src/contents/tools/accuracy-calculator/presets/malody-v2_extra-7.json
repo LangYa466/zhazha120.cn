@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 7",
+	"maps": [
+		{
+			"title": "梅里 - Paranoia (Cut) (1.25x) [MintApril_]",
+			"notes": 2339
+		},
+		{
+			"title": "Nightmare - Boulafacet [XingRen]",
+			"notes": 2461
+		},
+		{
+			"title": "LeaF - Paraclete -Miracle- [AkagiPh]",
+			"notes": 2511
+		},
+		{
+			"title": "Aoi - 夢見の少年 (1.15x) [AkagiPh]",
+			"notes": 2177
+		}
+	],
+	"require_accuracy": 96
+}

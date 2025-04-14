@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Regular 8",
+	"maps": [
+		{
+			"title": "哀愁マニア - The Lost Dedicated (1.05x) [DDMythical]",
+			"notes": 1962
+		},
+		{
+			"title": "高橋菜々 - The party we have never seen [XingRen]",
+			"notes": 1067
+		},
+		{
+			"title": "Silentroom - Finixe [Asherz007]",
+			"notes": 2388
+		},
+		{
+			"title": "Star* vs. Cryo - Myosotis Ultimate Dream [AZVW_2]",
+			"notes": 1772
+		}
+	],
+	"require_accuracy": 95
+}

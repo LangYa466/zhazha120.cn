@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Sample Extra 5",
+	"maps": [
+		{
+			"title": "M2U - Legend of Seeker (BPM*0.95) [Ycloki]",
+			"notes": 2731
+		},
+		{
+			"title": "LeaF – Wizdomiot [Satori]",
+			"notes": 2109
+		},
+		{
+			"title": "Dead Ball P Feat. Hatsune Miku & Kagami Rin – Sonesaki Shinju (BPM*0.925) [Cyrillic]",
+			"notes": 2365
+		},
+		{
+			"title": "DJ Genki vs. Camellia - Ragnarok (Cut) [teradora]",
+			"notes": 2691
+		}
+	],
+	"require_accuracy": 96
+}

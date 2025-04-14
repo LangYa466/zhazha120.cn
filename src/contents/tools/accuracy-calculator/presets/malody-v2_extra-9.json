@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 9",
+	"maps": [
+		{
+			"title": "Luze - Fragmentation (1.05x) [teradora]",
+			"notes": 3987
+		},
+		{
+			"title": "Octopodes remixed DSZ - Nostos2021 (1.05x) [XingRen]",
+			"notes": 1874
+		},
+		{
+			"title": "Dark PHOEiNX - Green-eyed Jealousy (Cut) [teradora]",
+			"notes": 4363
+		},
+		{
+			"title": "Falcom Sound Team jdk - SILENT DESERT (Cut) (BPM*1.2) [teradora vs. XingRen]",
+			"notes": 3843
+		}
+	],
+	"require_accuracy": 96
+}

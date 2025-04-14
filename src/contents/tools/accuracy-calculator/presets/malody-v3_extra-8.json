@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Extra 8",
+	"maps": [
+		{
+			"title": "はやぶさ (Hayabusa) // Hylotl",
+			"notes": 3789
+		},
+		{
+			"title": "驟雨の狹間 (Shuu no Hazama) // tera",
+			"notes": 3663
+		},
+		{
+			"title": "アマツカミ (Amatsukami) (1.15x) // Hinaka_Yuki",
+			"notes": 2424
+		},
+		{
+			"title": "CRIMSON FIGHTER (1.15x) // OxalicAcid",
+			"notes": 3255
+		}
+	],
+	"require_accuracy": 96
+}

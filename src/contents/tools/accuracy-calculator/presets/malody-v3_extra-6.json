@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Extra 6",
+	"maps": [
+		{
+			"title": "Defeat awaken battle ship // Hylotl",
+			"notes": 2483
+		},
+		{
+			"title": "Extraction // Oekakizuki",
+			"notes": 2276
+		},
+		{
+			"title": "Pastel Subliminal // OxalicAcid",
+			"notes": 2921
+		},
+		{
+			"title": "Synthesized Fortress // tera",
+			"notes": 3194
+		}
+	],
+	"require_accuracy": 96
+}

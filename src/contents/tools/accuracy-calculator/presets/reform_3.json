@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform 3",
+	"maps": [
+		{
+			"title": "9nine - Cross Over (Golgo13/Sensationer) [SMOC 8TH]",
+			"notes": 1008
+		},
+		{
+			"title": "The Flashbulb - Kirlian Shores (James May) [James May 1] {cut}",
+			"notes": 797
+		},
+		{
+			"title": "Rche - Entelecheia (Starry-) [Hyper]",
+			"notes": 1047
+		},
+		{
+			"title": "SHIKI - Endless Dream (hi19hi19) [hi19hi19 Pack 3 - Popcorn Blast JS Buttery Snack Filez]",
+			"notes": 1259
+		}
+	],
+	"require_accuracy": 96
+}

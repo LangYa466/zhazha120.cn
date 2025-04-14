@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Regular 6",
+	"maps": [
+		{
+			"title": "堀江由衣 - Sweet & Sweet CHERRY X [Golgo13]",
+			"notes": 1487
+		},
+		{
+			"title": "wa. vs. ETIA. - Akasagarbha [gemboyong]",
+			"notes": 1424
+		},
+		{
+			"title": "Polymath9 - HELLO! EveryOne! [[Crz]Derrick]",
+			"notes": 1381
+		},
+		{
+			"title": "Lunatic Sounds - DAN_DATAErr0r [Eedow]",
+			"notes": 1587
+		}
+	],
+	"require_accuracy": 95
+}

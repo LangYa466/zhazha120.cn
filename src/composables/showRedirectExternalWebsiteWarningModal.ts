@@ -5,7 +5,9 @@ import { NButton, NFlex } from 'naive-ui'
 export default (link: string) => {
 	const nuxt = useNuxtApp()
 
-	nuxt.$modal.create({
+	const modal = nuxt.$modal as ReturnType<typeof useModal>
+
+	modal.create({
 		preset: 'card',
 		class: 'lt-md:w-4/5 md:w-1/2',
 		title: '即将访问外部网站',

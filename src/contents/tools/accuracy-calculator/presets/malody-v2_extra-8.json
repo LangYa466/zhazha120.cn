@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 8",
+	"maps": [
+		{
+			"title": "Royal Hunt - Martial Arts (1.4x) [XingRen]",
+			"notes": 1929
+		},
+		{
+			"title": "Camellia - Gene Disruption (1.1x) [teradora]",
+			"notes": 2380
+		},
+		{
+			"title": "15 - paradigm shift [D-CSC] (1.15x) [AkagiPh]",
+			"notes": 2710
+		},
+		{
+			"title": "mabinogi - Death Melody (Cut) (1.25x) [XingRen]",
+			"notes": 4675
+		}
+	],
+	"require_accuracy": 96
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform 1",
+	"maps": [
+		{
+			"title": "ULTRA-PRISM - Miracle Chance (Golgo13/Sensationer) [SMOC 8TH] DD EDIT",
+			"notes": 878
+		},
+		{
+			"title": "marshmello - WaNt U 2 (erlinadewi-) [HYPER]",
+			"notes": 696
+		},
+		{
+			"title": "Porter Robinson & Madeon - Shelter (Dellvangel) [Loneliness]",
+			"notes": 954
+		},
+		{
+			"title": "t+pazolite - Tommorow Perfume (tpz Despair Mix) (Critical_Star) [ADVANCED Lv. 9]",
+			"notes": 1167
+		}
+	],
+	"require_accuracy": 96
+}

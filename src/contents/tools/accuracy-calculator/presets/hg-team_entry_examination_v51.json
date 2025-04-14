@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Hg Team Entry Examination V5.1",
+	"maps": [
+		{
+			"title": "Cave",
+			"notes": 1989
+		},
+		{
+			"title": "Metal Globe",
+			"notes": 2458
+		},
+		{
+			"title": "Sukisuki Zecchou Shou",
+			"notes": 2408
+		},
+		{
+			"title": "Fallen Symphony",
+			"notes": 3638
+		}
+	],
+	"require_accuracy": 96
+}

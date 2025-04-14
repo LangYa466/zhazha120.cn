@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Regular 5",
+	"maps": [
+		{
+			"title": "埋葬Y.J - 万吨匿名信 (1.05x) [imoe]",
+			"notes": 1953
+		},
+		{
+			"title": "削除 - Chips of notes [XingRen]",
+			"notes": 2250
+		},
+		{
+			"title": "猫叉master - Despair of ELFERIA [Potassium]",
+			"notes": 2166
+		},
+		{
+			"title": "黒皇帝 - Chronostasis (1.1x) [HXJ_Crafter]",
+			"notes": 1667
+		}
+	],
+	"require_accuracy": 95
+}

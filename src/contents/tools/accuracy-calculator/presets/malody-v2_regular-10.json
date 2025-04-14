@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Regular 10",
+	"maps": [
+		{
+			"title": "平沢進 - 追う者 [Wh1teh]",
+			"notes": 2659
+		},
+		{
+			"title": "Goreshit - Loli Fantasy [XingRen]",
+			"notes": 2188
+		},
+		{
+			"title": "The Ghost Of 3.13 - Daydream [Potassium]",
+			"notes": 2194
+		},
+		{
+			"title": "shiraishi - Moon Gate [[Crz]Derrick]",
+			"notes": 2187
+		}
+	],
+	"require_accuracy": 95
+}

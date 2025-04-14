@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Extra 9",
+	"maps": [
+		{
+			"title": "crazy_tek (DJ Noriken Remix) // tera",
+			"notes": 3888
+		},
+		{
+			"title": "Nhelv // tera",
+			"notes": 3030
+		},
+		{
+			"title": "終点 // Hinaka_Yuki",
+			"notes": 3581
+		},
+		{
+			"title": "Deadly force - Put an end // Sorakaru_ vs. Hinaka_Yuki",
+			"notes": 3700
+		}
+	],
+	"require_accuracy": 96
+}

@@ -13,11 +13,13 @@ const router = useRouter()
 
 const currentSelected = computed({
 	get: () => {
-		if (route.params.type === '') {
+		const type = String(route.params.type)
+
+		if (type === '') {
 			return
 		}
 
-		return route.params.type
+		return type
 	},
 	set: (value: string) => {
 		router.replace({

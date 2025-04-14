@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Regular 4",
+	"maps": [
+		{
+			"title": "ウミユリ海底譚 (Umiyuri Kaiteitan) // MACKEREL",
+			"notes": 1865
+		},
+		{
+			"title": "Fire in the sky // XingRen",
+			"notes": 1434
+		},
+		{
+			"title": "Icyxis // tyrcs",
+			"notes": 1284
+		},
+		{
+			"title": "绯红帝国 (The Crimson Empire) (1.1x) // Oekakizuki",
+			"notes": 1839
+		}
+	],
+	"require_accuracy": 95
+}

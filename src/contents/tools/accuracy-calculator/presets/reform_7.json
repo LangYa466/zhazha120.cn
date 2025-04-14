@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform 7",
+	"maps": [
+		{
+			"title": "Last Chance (Golgo13/Sensationer) [SMOC 8TH]",
+			"notes": 2114
+		},
+		{
+			"title": "Niki - WAVE (Skwid) [Dump Parade]",
+			"notes": 1777
+		},
+		{
+			"title": "Cardboard Box vs. STereochan - We eat at FIVE FIVE FIVE GUYS (hi19hi19) [hi19hi19 3 - Popcorn Blast]",
+			"notes": 1081
+		},
+		{
+			"title": "Tina Cousins - Hymn (Leo137) [Yolomania 3]",
+			"notes": 2734
+		}
+	],
+	"require_accuracy": 96
+}

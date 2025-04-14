@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Extra 7",
+	"maps": [
+		{
+			"title": "LiFE Garden (1.05x) // YuzakiNASB",
+			"notes": 2846
+		},
+		{
+			"title": "Alpha // Zetsfy",
+			"notes": 2260
+		},
+		{
+			"title": "Stay Alive (Zekk Remix) (1.25x) // Hylotl",
+			"notes": 2333
+		},
+		{
+			"title": "Heaven's Fall (1.4x) // tera",
+			"notes": 3347
+		}
+	],
+	"require_accuracy": 96
+}

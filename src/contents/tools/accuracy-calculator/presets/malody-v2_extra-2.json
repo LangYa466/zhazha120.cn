@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 2",
+	"maps": [
+		{
+			"title": "Masa - Kitsune no youmeiri (BPM*1.1) [Xingyue-]",
+			"notes": 2871
+		},
+		{
+			"title": "Camellia vs Expander - 紫陽花 -AZISAI- [AZVW_2]",
+			"notes": 2024
+		},
+		{
+			"title": "BACO - Love & Justice (BPM*1.15) [XingRen]",
+			"notes": 1871
+		},
+		{
+			"title": "dj TAKA feat. flare - message (Cut) [Linger]",
+			"notes": 2452
+		}
+	],
+	"require_accuracy": 96
+}

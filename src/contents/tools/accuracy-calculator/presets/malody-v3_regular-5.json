@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Regular 5",
+	"maps": [
+		{
+			"title": "白金デスコ (Platinum Disco) // mas3",
+			"notes": 1282
+		},
+		{
+			"title": "キュートなカノジョ (Cute na Kanojo) // tyrcs",
+			"notes": 1706
+		},
+		{
+			"title": "Reimei Sketchbook // Benson_",
+			"notes": 1473
+		},
+		{
+			"title": "Joker // HarKIn",
+			"notes": 1939
+		}
+	],
+	"require_accuracy": 95
+}

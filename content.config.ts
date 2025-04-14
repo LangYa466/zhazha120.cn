@@ -13,11 +13,7 @@ export default defineContentConfig({
 				name: z.string(),
 				maps: z.array(
 					z.object({
-						song: z.object({
-							english_name: z.string(),
-							original_name: z.string()
-								.nullable()
-						}),
+						title: z.string(),
 						notes: z.number()
 					})
 				),

@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 6",
+	"maps": [
+		{
+			"title": "SHIKI - Sepia (1.15x) [XingRen]",
+			"notes": 1766
+		},
+		{
+			"title": "Liet. - Nopea [MintApril_]",
+			"notes": 1861
+		},
+		{
+			"title": "さわわ - Satori Trisis (1.35x) [XingRen]",
+			"notes": 3171
+		},
+		{
+			"title": "LunaticSounds - 臨終 [teradora vs XingRen]",
+			"notes": 1680
+		}
+	],
+	"require_accuracy": 96
+}

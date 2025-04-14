@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Sample Extra 2",
+	"maps": [
+		{
+			"title": "mozell - banbado - piano version [Czego]",
+			"notes": 2158
+		},
+		{
+			"title": "Camellia - Towards the horizon [Surya]",
+			"notes": 1953
+		},
+		{
+			"title": "Sakanaction - Shin Takarajima [Luyzi]",
+			"notes": 2196
+		},
+		{
+			"title": "Ayo - Hanjuuryoku no Machi (BPM*1.275) [teradora]",
+			"notes": 3160
+		}
+	],
+	"require_accuracy": 96
+}

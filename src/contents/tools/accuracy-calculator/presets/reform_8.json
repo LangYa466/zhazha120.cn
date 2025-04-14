@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform 8",
+	"maps": [
+		{
+			"title": "C-Clays - To The Limit (Wh1teh) [Fennec Fantasy] {1.1x // cut}",
+			"notes": 2177
+		},
+		{
+			"title": "Terminal11 - Reluctantly Accepting Temporary Overexhaustion (ceteka) [HSMP6]",
+			"notes": 1309
+		},
+		{
+			"title": "Yu_Ashina - Trickstarz {1.15x} (hi19hi19) [hi19hi19 5 - Streams and Memes]",
+			"notes": 1608
+		},
+		{
+			"title": "DJ Myosuke - Anguish (Shoegazer) [Cherry Blossoms and Broken Streams] {cut}",
+			"notes": 1589
+		}
+	],
+	"require_accuracy": 96
+}

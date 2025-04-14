@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Regular 1",
+	"maps": [
+		{
+			"title": "かめりあ - Glitch Nerds [Eemia]",
+			"notes": 831
+		},
+		{
+			"title": "ginkiha - Borealis [Potassium]",
+			"notes": 955
+		},
+		{
+			"title": "Qrispy Joybox - Niflheimr [Tofu1222]",
+			"notes": 907
+		},
+		{
+			"title": "Iru Feat.月ノ美兎 - MOON!! [XingRen]",
+			"notes": 654
+		}
+	],
+	"require_accuracy": 95
+}

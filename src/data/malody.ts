@@ -12,7 +12,7 @@ interface Malody {
 
 	readonly passed_dans: {
 		readonly name: string
-		readonly complete_at: string
+		readonly complete_at: Date
 		readonly bilibili_video_id: string | null
 	}[]
 

@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V3 Regular 1",
+	"maps": [
+		{
+			"title": "尘世闲游 (Rex Incognito) // YuzukiY",
+			"notes": 695
+		},
+		{
+			"title": "恋せよ乙女！ (Koiseyo Otome!) // tkdkendo",
+			"notes": 621
+		},
+		{
+			"title": "Break // XingRen",
+			"notes": 718
+		},
+		{
+			"title": "KING // DongShaoZhou",
+			"notes": 1279
+		}
+	],
+	"require_accuracy": 95
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Sample Extra 3",
+	"maps": [
+		{
+			"title": "WANIMA - Tomo ni (BPM*1.12) [Xing_Ren]",
+			"notes": 2299
+		},
+		{
+			"title": "YOASOBI - Yoru ni kakeru (BPM*1.25) (Cut) [teradora]",
+			"notes": 2378
+		},
+		{
+			"title": "xi - Akasha (BPM*0.88) (Cut) [GwiCL x SnowPh]",
+			"notes": 2677
+		},
+		{
+			"title": "Gold6324 - Laser rain (remix) (BPM*1.25) [Xing_Ren]",
+			"notes": 2640
+		}
+	],
+	"require_accuracy": 96
+}

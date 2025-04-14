@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 2 v1.5",
+	"maps": [
+		{
+			"title": "Junk / 発汗BMS - Qualia [長距離走] [XingRen]",
+			"notes": 2457
+		},
+		{
+			"title": "R300k - Rusty Sky [CUWAN]",
+			"notes": 2239
+		},
+		{
+			"title": "Camellia vs Expander - 紫陽花 -AZISAI- [AZVW_2]",
+			"notes": 2024
+		},
+		{
+			"title": "Nightcore - Take my hand (BPM*1.2) [XingRen]",
+			"notes": 2561
+		}
+	],
+	"require_accuracy": 96
+}

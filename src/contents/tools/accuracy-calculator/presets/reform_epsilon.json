@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Reform ε",
+	"maps": [
+		{
+			"title": "SHIKI - Rose Quartz (EGG) [Singles] {1.3x}",
+			"notes": 2128
+		},
+		{
+			"title": "The Ghost of 3.13 - Forgotten (Shoegazer x Zyph) [Yolomania 2] {1.4x}",
+			"notes": 2552
+		},
+		{
+			"title": "ueotan - Mario Paint (Time Progression for BMS) [D-ANOTHER] {DELAYMASTER}",
+			"notes": 2194
+		},
+		{
+			"title": "plastic feat. Sakito - Hitsugi To Futago (snoverpk) [PHANTASM] {1.25x}",
+			"notes": 2829
+		}
+	],
+	"require_accuracy": 96
+}

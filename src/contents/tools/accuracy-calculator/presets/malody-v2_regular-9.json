@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Regular 9",
+	"maps": [
+		{
+			"title": "Tobu - Dusk [MintApril_]",
+			"notes": 1799
+		},
+		{
+			"title": "梅干茶漬け - Panic! Pop'n! Picnic! [XingRen]",
+			"notes": 2023
+		},
+		{
+			"title": "t+pazolite - Kick-ass Kong-Fu Carnival (xi remix) [Potassium]",
+			"notes": 2281
+		},
+		{
+			"title": "幽閉サテライト - 约束の君 (Cut) [XingRen]",
+			"notes": 1787
+		}
+	],
+	"require_accuracy": 95
+}

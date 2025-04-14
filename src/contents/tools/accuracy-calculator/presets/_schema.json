@@ -17,7 +17,7 @@
 					}
 				},
 				"required": [
-					"song",
+					"title",
 					"notes"
 				]
 			}

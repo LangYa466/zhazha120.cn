@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import highlight from 'highlight.js'
 import { darkTheme, dateZhCN, zhCN } from 'naive-ui'
 </script>
 
 <template>
-	<n-config-provider :date-locale="dateZhCN" :locale="zhCN" :theme="darkTheme">
+	<n-config-provider :date-locale="dateZhCN" :hljs="highlight" :locale="zhCN" :theme="darkTheme">
 		<n-dialog-provider>
 			<n-loading-bar-provider>
 				<n-message-provider>

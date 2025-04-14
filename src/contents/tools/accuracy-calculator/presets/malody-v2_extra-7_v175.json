@@ -1,0 +1,23 @@
+{
+	"$schema": "_schema.json",
+	"name": "Malody Dan V2 Extra 7 v1.75",
+	"maps": [
+		{
+			"title": "美里 with Na+ - CG901B (BPM*1.1) [Rachel]",
+			"notes": 2725
+		},
+		{
+			"title": "o.s.gate - リジットXXXパラダイス [Satori]",
+			"notes": 2166
+		},
+		{
+			"title": "Goreshit - toromi hearts 2 [Rachel]",
+			"notes": 2545
+		},
+		{
+			"title": "さわわ - Tokamak Sol Cannon (BPM*1.4) [XingRen]",
+			"notes": 3691
+		}
+	],
+	"require_accuracy": 96
+}
