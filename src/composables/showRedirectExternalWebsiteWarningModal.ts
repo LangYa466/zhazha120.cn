@@ -1,4 +1,5 @@
 import { NButton, NFlex } from 'naive-ui'
+import '~/styles/shared.scss'
 
 // @unocss-include
 
@@ -9,7 +10,7 @@ export default (link: string) => {
 
 	modal.create({
 		preset: 'card',
-		class: 'lt-md:w-4/5 md:w-1/2',
+		class: 'modal',
 		title: '即将访问外部网站',
 		content: () => h(NFlex, {
 			align: 'center',

@@ -32,7 +32,7 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 	<n-card size="small" title="tetr.io">
 		<n-flex vertical>
 			<n-flex class="lt-md:(!flex-col items-center)" justify="space-evenly">
-				<n-flex align="center" size="small" vertical>
+				<n-flex align="center" vertical>
 					<n-text class="fw-bold" type="info">40L</n-text>
 
 					<n-divider class="!my-0"/>
@@ -48,7 +48,7 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 					</n-timeline>
 				</n-flex>
 
-				<n-flex align="center" size="small" vertical>
+				<n-flex align="center" vertical>
 					<n-text class="fw-bold" type="warning">Blitz</n-text>
 
 					<n-divider class="!my-0"/>
@@ -64,7 +64,7 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 					</n-timeline>
 				</n-flex>
 
-				<n-flex align="center" size="small" vertical>
+				<n-flex align="center" vertical>
 					<n-text class="fw-bold" type="error">第 1 赛季 段位</n-text>
 
 					<n-divider class="!my-0"/>
@@ -86,7 +86,7 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 					</n-timeline>
 				</n-flex>
 
-				<n-flex align="center" size="small" vertical>
+				<n-flex align="center" vertical>
 					<n-text class="fw-bold" type="success">第 2 赛季 段位</n-text>
 
 					<n-divider class="!my-0"/>
@@ -109,15 +109,15 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 				</n-flex>
 			</n-flex>
 
-			<iframe :src="generateOverlay('horizontal')" class="lt-md:hidden border-none w-full h-250 md:h-60"/>
-			<iframe :src="generateOverlay('vertical')" class="md:hidden border-none w-full h-250 md:h-60"/>
+			<iframe :src="generateOverlay('horizontal')" class="desktop-only border-none w-full h-250 md:h-60"/>
+			<iframe :src="generateOverlay('vertical')" class="mobile-only border-none w-full h-250 md:h-60"/>
 
 			<n-divider class="!my-0">背景</n-divider>
 
 			<n-image :img-props="{ class: 'size-full' }" src="https://cdn.zhazha120.cn/download/tetrio_background.webp"/>
 		</n-flex>
 
-		<template #footer>
+		<template #action>
 			<n-flex align="center" class="lt-md:!flex-col">
 				<template v-for="button in tetrio.buttons">
 					<custom-button v-bind="button"/>
@@ -126,3 +126,7 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 		</template>
 	</n-card>
 </template>
+
+<style lang="scss" scoped>
+@use '~/styles/utils';
+</style>

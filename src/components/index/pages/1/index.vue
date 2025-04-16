@@ -4,7 +4,7 @@
 			<n-flex align="center" vertical>
 				<index-pages-1-intro/>
 
-				<div class="md:hidden">
+				<div class="mobile-only">
 					<index-pages-1-codetime/>
 				</div>
 
@@ -12,7 +12,7 @@
 
 				<index-pages-1-contacts/>
 
-				<div class="lt-md:hidden">
+				<div class="desktop-only">
 					<index-pages-1-codetime/>
 				</div>
 
@@ -23,3 +23,7 @@
 		</div>
 	</div>
 </template>
+
+<style lang="scss" scoped>
+@use '~/styles/utils';
+</style>

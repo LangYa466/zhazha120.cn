@@ -1,10 +1,8 @@
 <script lang="ts" setup>
 import { DownloadOutlined, SaveOutlined } from '@vicons/antd'
-import type Preset from '~/types/tools/accuracy-calculator/preset'
+import { useToolsAccuracyCalculatorStore } from '~/stores/tools/accuracyCalculatorStore'
 
-const data = defineModel<Preset>('value', {
-	required: true
-})
+const toolsAccuracyCalculatorStore = useToolsAccuracyCalculatorStore()
 
 const exportData = ref<string>()
 const showExportModal = ref(false)
@@ -12,7 +10,7 @@ const showExportModal = ref(false)
 const saveAsPreset = () => {
 	exportData.value = JSON.stringify({
 		$schema: '_schema.json',
-		...data.value
+		...toolsAccuracyCalculatorStore.editor
 	}, null, 4)
 
 	showExportModal.value = true
@@ -43,7 +41,7 @@ const downloadExport = () => {
 </script>
 
 <template>
-	<n-flex justify="center">
+	<div class="text-center">
 		<n-button secondary type="success" @click="saveAsPreset">
 			<template #icon>
 				<n-icon :component="SaveOutlined"/>
@@ -51,15 +49,15 @@ const downloadExport = () => {
 
 			保存为预设
 		</n-button>
-	</n-flex>
+	</div>
 
-	<n-modal v-model:show="showExportModal" class="lt-md:w-4/5 md:w-1/2" preset="card" title="保存结果">
+	<n-modal v-model:show="showExportModal" class="modal" preset="card" title="保存结果">
 		<n-flex vertical>
 			<n-scrollbar x-scrollable>
 				<n-code :code="exportData" language="json" show-line-numbers/>
 			</n-scrollbar>
 
-			<n-flex justify="center">
+			<div class="text-center">
 				<n-button @click="downloadExport">
 					<template #icon>
 						<n-icon :component="DownloadOutlined"/>
@@ -67,7 +65,11 @@ const downloadExport = () => {
 
 					下载
 				</n-button>
-			</n-flex>
+			</div>
 		</n-flex>
 	</n-modal>
 </template>
+
+<style lang="scss" scoped>
+@use '~/styles/shared';
+</style>

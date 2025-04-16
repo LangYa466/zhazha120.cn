@@ -16,7 +16,7 @@ const furry = await queryCollection('furry').where('code', '=', route.params.cod
 
 			<n-card size="small">
 				<template v-if="furry !== null">
-					<n-flex>
+					<n-flex size="small">
 						<n-image :img-props="{ class: 'h-100' }" :src="loadAsset(`furry_${furry.image_hash}`).value"/>
 
 						<n-flex :size="0" vertical>

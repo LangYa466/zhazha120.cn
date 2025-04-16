@@ -1,0 +1,7 @@
+.mobile-only {
+	@apply md:hidden;
+}
+
+.desktop-only {
+	@apply lt-md:hidden;
+}

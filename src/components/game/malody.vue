@@ -20,19 +20,19 @@ const passed_dans = computed(() => {
 			<n-flex :size="0" class="lt-md:(!flex-col text-center)" justify="space-evenly">
 				<span class="text-blue-300 fw-bold">叠 (Jack): {{ malody.jack }}</span>
 
-				<div class="lt-md:hidden">
+				<div class="desktop-only">
 					<n-divider class="!my-0" vertical/>
 				</div>
 
 				<span class="text-yellow-300 fw-bold">技 (Tech): {{ malody.tech }}</span>
 
-				<div class="lt-md:hidden">
+				<div class="desktop-only">
 					<n-divider class="!my-0" vertical/>
 				</div>
 
 				<span class="text-red-300 fw-bold">乱 (Speed): {{ malody.speed }}</span>
 
-				<div class="lt-md:hidden">
+				<div class="desktop-only">
 					<n-divider class="!my-0" vertical/>
 				</div>
 
@@ -53,7 +53,7 @@ const passed_dans = computed(() => {
 					<n-card :title="passed_dan.name" class="w-fit" size="small">
 						<iframe :src="(`https://player.bilibili.com/player.html?bvid=${passed_dan.bilibili_video_id}&autoplay=0`)" class="border-none lt-md:w-full md:h-60 aspect-ratio-video"/>
 
-						<template #footer>
+						<template #action>
 							<div class="text-right">
 								<n-text :depth="3">{{ passed_dan.complete_at.toLocaleDateString() }}</n-text>
 							</div>
@@ -63,7 +63,7 @@ const passed_dans = computed(() => {
 			</n-flex>
 		</n-flex>
 
-		<template #footer>
+		<template #action>
 			<n-flex align="center" class="lt-md:!flex-col">
 				<template v-for="button in malody.buttons">
 					<custom-button v-bind="button"/>
@@ -72,3 +72,7 @@ const passed_dans = computed(() => {
 		</template>
 	</n-card>
 </template>
+
+<style lang="scss" scoped>
+@use '~/styles/utils';
+</style>

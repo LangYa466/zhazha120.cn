@@ -8,25 +8,25 @@ import osumania from '~/data/osumania'
 			<n-flex :size="0" class="lt-md:(!flex-col text-center)" justify="space-evenly">
 				<span class="text-blue-300 fw-bold">叠 (Jack): {{ osumania.jack }}</span>
 
-				<div class="lt-md:hidden">
+				<div class="desktop-only">
 					<n-divider class="!my-0" vertical/>
 				</div>
 
 				<span class="text-yellow-300 fw-bold">技 (Tech): {{ osumania.tech }}</span>
 
-				<div class="lt-md:hidden">
+				<div class="desktop-only">
 					<n-divider class="!my-0" vertical/>
 				</div>
 
 				<span class="text-red-300 fw-bold">乱 (Speed): {{ osumania.speed }}</span>
 
-				<div class="lt-md:hidden">
+				<div class="desktop-only">
 					<n-divider class="!my-0" vertical/>
 				</div>
 
 				<span class="text-green-300 fw-bold">切 (Stream): {{ osumania.stream }}</span>
 
-				<div class="lt-md:hidden">
+				<div class="desktop-only">
 					<n-divider class="!my-0" vertical/>
 				</div>
 
@@ -38,7 +38,7 @@ import osumania from '~/data/osumania'
 			<n-image :img-props="{ class: 'size-full' }" :src="(`https://osu-sig.vercel.app/card?user=${osumania.id}&mode=mania&animation=true`)"/>
 		</n-flex>
 
-		<template #footer>
+		<template #action>
 			<n-flex align="center" class="lt-md:!flex-col">
 				<template v-for="button in osumania.buttons">
 					<custom-button v-bind="button"/>
@@ -47,3 +47,7 @@ import osumania from '~/data/osumania'
 		</template>
 	</n-card>
 </template>
+
+<style lang="scss" scoped>
+@use '~/styles/utils';
+</style>

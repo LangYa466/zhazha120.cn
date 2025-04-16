@@ -15,7 +15,7 @@ import { website as website_stacks } from '~/data/stacks'
 					</n-button>
 				</n-flex>
 
-				<div class="lt-md:hidden">
+				<div class="desktop-only">
 					<n-divider class="!mx-0" vertical/>
 				</div>
 
@@ -50,3 +50,7 @@ import { website as website_stacks } from '~/data/stacks'
 		</n-flex>
 	</n-card>
 </template>
+
+<style lang="scss" scoped>
+@use '~/styles/utils';
+</style>

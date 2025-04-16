@@ -13,14 +13,14 @@ import information from '~/data/information'
 				<span>&copy; 2025 - {{ new Date().getFullYear() }}</span>
 
 				<template v-if="information.record !== null">
-					<div class="lt-md:hidden">
+					<div class="desktop-only">
 						<n-divider class="!mx-0" vertical/>
 					</div>
 
 					<n-button text @click="showRedirectExternalWebsiteWarningModal('https://beian.miit.gov.cn')">{{ information.record.province_abbr }} ICP 备 {{ information.record.icp_code }} 号</n-button>
 
 					<template v-if="information.record.safety_code !== null">
-						<div class="lt-md:hidden">
+						<div class="desktop-only">
 							<n-divider class="!mx-0" vertical/>
 						</div>
 
@@ -31,3 +31,7 @@ import information from '~/data/information'
 		</n-layout-footer>
 	</n-layout>
 </template>
+
+<style lang="scss" scoped>
+@use '~/styles/utils';
+</style>

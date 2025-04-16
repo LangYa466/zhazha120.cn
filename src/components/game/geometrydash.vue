@@ -10,7 +10,7 @@ import geometrydash from '~/data/geometrydash'
 			<span class="text-3xl fw-bold">{{ geometrydash.name }}</span>
 		</n-flex>
 
-		<template #footer>
+		<template #action>
 			<n-flex align="center" class="lt-md:!flex-col">
 				<template v-for="button in geometrydash.buttons">
 					<custom-button v-bind="button"/>

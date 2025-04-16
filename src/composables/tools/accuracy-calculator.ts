@@ -1,4 +1,4 @@
-import { sumBy } from 'remeda'
+import { prop, sumBy } from 'remeda'
 
 interface Input {
 	readonly notes: number
@@ -19,14 +19,14 @@ export const calculateAccuracy = (inputs: Input[]) => {
 		const currentNotes = currentInput.notes
 
 		const currentAccuracy = currentInput.accuracy!
-		const passedNotes = sumBy(validInputs.slice(0, index + 1), input => input.notes)
+		const passedNotes = sumBy(validInputs.slice(0, index + 1), prop('notes'))
 
 		if (index === 0) {
 			return currentAccuracy
 		}
 
 		const lastAccuracy = validInputs[index - 1].accuracy!
-		const lastNotes = sumBy(validInputs.slice(0, index), input => input.notes)
+		const lastNotes = sumBy(validInputs.slice(0, index), prop('notes'))
 
 		return (currentAccuracy * passedNotes - lastAccuracy * lastNotes) / currentNotes
 	})

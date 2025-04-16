@@ -9,6 +9,7 @@ export default defineNuxtConfig({
 	modules: [
 		'@nuxt/scripts',
 		'@teages/nuxt-legacy',
+		'@pinia/nuxt',
 		'@nuxt/content',
 		'@unocss/nuxt',
 		'@vueuse/nuxt',

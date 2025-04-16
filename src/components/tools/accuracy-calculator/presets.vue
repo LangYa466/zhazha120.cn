@@ -1,16 +1,9 @@
 <script lang="ts" setup>
-import type { Writeable } from 'zod'
-import type Preset from '~/types/tools/accuracy-calculator/preset'
+import { useToolsAccuracyCalculatorStore } from '~/stores/tools/accuracyCalculatorStore'
 
-const data = defineModel<
-	Writeable<Preset>
->('value', {
-	required: true
-})
+const toolsAccuracyCalculatorStore = useToolsAccuracyCalculatorStore()
 
 const presets = await queryCollection('accuracy_calculator_presets').all()
-
-const selectedPreset = ref()
 
 const presetSelectOptions = computed(() => {
 	return presets.map(preset => {
@@ -21,21 +14,25 @@ const presetSelectOptions = computed(() => {
 	})
 })
 
-watch(selectedPreset, async newSelectedPreset => {
+const handleSelectChange = async (newSelectedPreset: string) => {
 	const preset = presets.find(preset => newSelectedPreset === preset.id)
 
 	if (preset === undefined) {
 		return
 	}
 
-	data.value.name = preset.name
-	data.value.maps = preset.maps
-	data.value.require_accuracy = preset.require_accuracy
-})
+	toolsAccuracyCalculatorStore.$patch({
+		editor: {
+			name: preset.name,
+			maps: preset.maps,
+			require_accuracy: preset.require_accuracy
+		}
+	})
+}
 </script>
 
 <template>
-	<n-card size="small" title="预设">
-		<n-select v-model:value="selectedPreset" :options="presetSelectOptions" filterable/>
+	<n-card class="h-full" size="small" title="预设">
+		<n-select :options="presetSelectOptions" filterable @update:value="handleSelectChange"/>
 	</n-card>
 </template>
