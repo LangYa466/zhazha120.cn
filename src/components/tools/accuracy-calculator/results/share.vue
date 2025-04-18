@@ -25,9 +25,7 @@ const formats = computed(() => {
 	]
 })
 
-const clipboard = useClipboard({
-	legacy: true
-})
+const clipboard = useClipboard()
 
 const message = useMessage()
 
