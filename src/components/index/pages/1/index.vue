@@ -10,14 +10,23 @@
 
 				<n-divider class="!my-0"/>
 
-				<index-pages-1-contacts/>
+				<div class="desktop-only">
+					<index-pages-1-contacts/>
+				</div>
 
 				<div class="desktop-only">
 					<index-pages-1-codetime/>
 				</div>
 
-				<div class="md:mt-10">
+				<div class="md:mt-10 desktop-only">
 					<index-pages-1-buttons/>
+				</div>
+
+				<div class="mobile-only">
+					<n-flex justify="center">
+						<index-pages-1-contacts/>
+						<index-pages-1-buttons/>
+					</n-flex>
 				</div>
 			</n-flex>
 		</div>
