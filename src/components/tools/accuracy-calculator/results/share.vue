@@ -30,6 +30,11 @@ const clipboard = useClipboard()
 const message = useMessage()
 
 const copy = async (text: string) => {
+	if (!clipboard.isSupported) {
+		message.error('复制失败')
+		return
+	}
+
 	await clipboard.copy(text)
 
 	await nextTick(() => {
