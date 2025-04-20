@@ -1,16 +1,17 @@
 <script lang="ts" setup>
 import friend_links from '~/data/friend_links'
+import { isDesktop, isMobile } from '~/shared/isMobile'
 </script>
 
 <template>
-	<n-flex class="lt-md:!flex-col" justify="center">
+	<n-flex :vertical="isMobile" inline justify="center">
 		<template v-for="friend_link in friend_links">
 			<div class="transition-(opacity duration-300) hover:opacity-50 cursor-pointer" @click="showRedirectExternalWebsiteWarningModal(friend_link.href)">
-				<n-card class="md:w-fit h-full" size="small">
-					<n-flex :wrap="false" align="center" class="h-full" size="small">
-						<n-image :img-props="{ class: 'h-10' }" :src="friend_link.icon" class="rounded-full" preview-disabled/>
+				<n-card :class="{ 'h-full': isDesktop }" size="small">
+					<n-flex :class="{ 'h-full': isDesktop }" :wrap="false" align="center" inline size="small">
+						<n-image :img-props="{ class: 'size-full' }" :src="friend_link.icon" class="h-10 rounded-full" preview-disabled/>
 
-						<n-flex :size="0" vertical>
+						<n-flex :size="0" inline vertical>
 							<span class="fw-bold">{{ friend_link.name }}</span>
 
 							<template v-if="friend_link.description !== null">

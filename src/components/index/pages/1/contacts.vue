@@ -1,49 +1,57 @@
 <script lang="ts" setup>
-import { SearchOutlined } from '@vicons/antd'
+import { MoreOutlined, SearchOutlined } from '@vicons/antd'
 import information from '~/data/information'
+import { isMobile } from '~/shared/isMobile'
 
-const { define: ContactsDefine, reuse: Contacts } = createReusableTemplate()
-
-const showModal = ref(false)
+const { define: ContactsDefine, reuse: Contacts } = createReusableTemplate<{
+	readonly contacts: typeof information.contacts
+}>()
 </script>
 
 <template>
-	<ContactsDefine>
-		<n-flex align="center" class="lt-md:!flex-col w-full" justify="center">
-			<template v-for="button in information.contacts">
-				<div class="mobile-only">
-					<custom-button v-bind="button"/>
-				</div>
-
-				<div class="desktop-only">
-					<custom-button secondary size="small" v-bind="button"/>
-				</div>
-			</template>
-		</n-flex>
+	<ContactsDefine v-slot="{ contacts }">
+		<template v-for="button in contacts">
+			<custom-button secondary v-bind="button"/>
+		</template>
 	</ContactsDefine>
 
-	<div class="mobile-only">
-		<n-button @click="showModal = !showModal">
-			<template #icon>
-				<n-icon :component="SearchOutlined"/>
-			</template>
+	<n-flex :wrap="false" inline justify="center" size="small">
+		<template v-if="isMobile">
+			<custom-modal preset="card" title="找到我">
+				<template #trigger="{ toggle }">
+					<n-button @click="toggle">
+						<template #icon>
+							<n-icon :component="SearchOutlined"/>
+						</template>
 
-			找到我
-		</n-button>
-	</div>
+						找到我
+					</n-button>
+				</template>
 
-	<div class="desktop-only">
-		<Contacts/>
-	</div>
+				<n-flex inline justify="center" size="small">
+					<Contacts :contacts="information.contacts"/>
+				</n-flex>
+			</custom-modal>
+		</template>
 
-	<n-modal v-model:show="showModal" class="modal" preset="card" title="找到我">
-		<div class="overflow-scroll">
-			<Contacts/>
-		</div>
-	</n-modal>
+		<template v-else>
+			<Contacts :contacts="information.contacts.filter(contact => !contact.hide)"/>
+
+			<custom-modal preset="card" title="更多">
+				<template #trigger="{ toggle }">
+					<n-button secondary @click="toggle">
+						<template #icon>
+							<n-icon :component="MoreOutlined"/>
+						</template>
+
+						更多
+					</n-button>
+				</template>
+
+				<n-flex inline justify="center" size="small">
+					<Contacts :contacts="information.contacts.filter(contact => contact.hide)"/>
+				</n-flex>
+			</custom-modal>
+		</template>
+	</n-flex>
 </template>
-
-<style lang="scss" scoped>
-@use '~/styles/utils';
-@use '~/styles/shared';
-</style>

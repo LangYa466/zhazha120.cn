@@ -1,66 +1,60 @@
 <script lang="ts" setup>
 import { LinkOutlined, ToolOutlined } from '@vicons/antd'
 import information from '~/data/information'
+import { isMobile } from '~/shared/isMobile'
 import type Button from '~/types/button'
 
 const { define: ButtonsDefine, reuse: Buttons } = createReusableTemplate<{
 	readonly buttons: Button[]
 }>()
-
-const showButtonsModal = ref(false)
-const showToolsModal = ref(false)
 </script>
 
 <template>
 	<ButtonsDefine v-slot="{ buttons }">
-		<n-flex align="center" class="lt-md:!flex-col w-full" justify="center">
+		<n-flex align="center" inline justify="center">
 			<template v-for="button in buttons">
 				<custom-button v-bind="button"/>
 			</template>
 		</n-flex>
 	</ButtonsDefine>
 
-	<div class="mobile-only">
-		<n-flex justify="center">
-			<n-button @click="showButtonsModal = !showButtonsModal">
-				<template #icon>
-					<n-icon :component="LinkOutlined"/>
+	<template v-if="isMobile">
+		<n-flex inline justify="center">
+			<custom-modal preset="card" title="探索我">
+				<template #trigger="{ toggle }">
+					<n-button @click="toggle">
+						<template #icon>
+							<n-icon :component="LinkOutlined"/>
+						</template>
+
+						探索我
+					</n-button>
 				</template>
 
-				探索我
-			</n-button>
+				<Buttons :buttons="information.explores"/>
+			</custom-modal>
 
-			<n-button @click="showToolsModal = !showToolsModal">
-				<template #icon>
-					<n-icon :component="ToolOutlined"/>
+			<custom-modal preset="card" title="在线工具">
+				<template #trigger="{ toggle }">
+					<n-button @click="toggle">
+						<template #icon>
+							<n-icon :component="ToolOutlined"/>
+						</template>
+
+						小工具
+					</n-button>
 				</template>
 
-				小工具
-			</n-button>
+				<Buttons :buttons="information.tools"/>
+			</custom-modal>
 		</n-flex>
-	</div>
+	</template>
 
-	<div class="desktop-only">
-		<n-flex vertical>
-			<Buttons :buttons="information.explores"/>
-			<Buttons :buttons="information.tools"/>
+	<template v-else>
+		<n-flex align="center" inline vertical>
+			<template v-for="buttons in [information.explores, information.tools]">
+				<Buttons :buttons="buttons"/>
+			</template>
 		</n-flex>
-	</div>
-
-	<n-modal v-model:show="showButtonsModal" class="modal" preset="card" title="有用的按钮">
-		<div class="overflow-scroll">
-			<Buttons :buttons="information.explores"/>
-		</div>
-	</n-modal>
-
-	<n-modal v-model:show="showToolsModal" class="modal" preset="card" title="在线工具">
-		<div class="overflow-scroll">
-			<Buttons :buttons="information.tools"/>
-		</div>
-	</n-modal>
+	</template>
 </template>
-
-<style lang="scss" scoped>
-@use '~/styles/utils';
-@use '~/styles/shared';
-</style>

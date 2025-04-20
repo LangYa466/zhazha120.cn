@@ -1,38 +1,22 @@
+<script lang="ts" setup>
+import { isDesktop } from '~/shared/isMobile.js'
+</script>
+
 <template>
-	<div class="md:min-h-screen relative">
-		<div class="md:(absolute top-1/2 left-1/2 -translate-1/2)">
+	<div :class="{ 'min-h-screen relative': isDesktop }">
+		<div :class="{ 'absolute top-1/2 left-1/2 -translate-1/2': isDesktop }">
 			<n-flex align="center" vertical>
 				<index-pages-1-intro/>
 
-				<div class="mobile-only">
-					<index-pages-1-codetime/>
-				</div>
+				<index-pages-1-codetime/>
 
 				<n-divider class="!my-0"/>
 
-				<div class="desktop-only">
+				<n-flex :vertical="isDesktop" inline justify="center" size="small">
 					<index-pages-1-contacts/>
-				</div>
-
-				<div class="desktop-only">
-					<index-pages-1-codetime/>
-				</div>
-
-				<div class="md:mt-10 desktop-only">
 					<index-pages-1-buttons/>
-				</div>
-
-				<div class="mobile-only">
-					<n-flex justify="center">
-						<index-pages-1-contacts/>
-						<index-pages-1-buttons/>
-					</n-flex>
-				</div>
+				</n-flex>
 			</n-flex>
 		</div>
 	</div>
 </template>
-
-<style lang="scss" scoped>
-@use '~/styles/utils';
-</style>

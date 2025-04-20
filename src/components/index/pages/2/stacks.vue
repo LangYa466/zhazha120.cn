@@ -1,27 +1,30 @@
 <script lang="ts" setup>
 import stacks from '~/data/stacks'
+import { isMobile } from '~/shared/isMobile'
 </script>
 
 <template>
-	<n-flex class="md:!flex-nowrap">
+	<n-flex :vertical="isMobile" inline>
 		<template v-for="(_stacks, type) in stacks">
-			<n-card :title="type" size="small">
-				<n-flex size="small">
-					<template v-for="stack in _stacks">
-						<n-popover>
-							<template #trigger>
-								<n-button text @click="showRedirectExternalWebsiteWarningModal(stack.website)">
-									<template #icon>
-										<div :class="stack.icon_class"/>
-									</template>
-								</n-button>
-							</template>
+			<div class="flex-1">
+				<n-card :title="type" size="small">
+					<n-flex size="small">
+						<template v-for="stack in _stacks">
+							<n-popover>
+								<template #trigger>
+									<n-button text @click="showRedirectExternalWebsiteWarningModal(stack.website)">
+										<template #icon>
+											<div :class="stack.icon_class"/>
+										</template>
+									</n-button>
+								</template>
 
-							{{ stack.name }}
-						</n-popover>
-					</template>
-				</n-flex>
-			</n-card>
+								{{ stack.name }}
+							</n-popover>
+						</template>
+					</n-flex>
+				</n-card>
+			</div>
 		</template>
 	</n-flex>
 </template>

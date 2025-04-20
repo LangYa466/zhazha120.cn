@@ -18,13 +18,17 @@ interface Record {
 	readonly safety_code: number | null
 }
 
+interface ContactButton extends Button {
+	readonly hide: boolean
+}
+
 interface Information {
 	readonly name: string
 	readonly avatar: string
 	readonly description: string
 
 	readonly tags: Tag[]
-	readonly contacts: Button[]
+	readonly contacts: ContactButton[]
 	readonly explores: Button[]
 	readonly tools: Button[]
 
@@ -62,7 +66,8 @@ export default {
 			icon: () => h(NIcon, {
 				component: QqOutlined
 			}),
-			is_external: true
+			is_external: true,
+			hide: false
 		},
 		{
 			name: '邮箱',
@@ -70,7 +75,8 @@ export default {
 			icon: () => h(NIcon, {
 				component: MailOutlined
 			}),
-			is_external: true
+			is_external: true,
+			hide: false
 		},
 		{
 			name: '网易云音乐',
@@ -78,7 +84,8 @@ export default {
 			icon: () => h('div', {
 				class: 'i-tabler:brand-netease-music scale-90'
 			}),
-			is_external: true
+			is_external: true,
+			hide: true
 		},
 		{
 			name: 'Steam',
@@ -86,7 +93,8 @@ export default {
 			icon: () => h(NIcon, {
 				component: BrandSteam
 			}),
-			is_external: true
+			is_external: true,
+			hide: true
 		},
 		{
 			name: '哔哩哔哩',
@@ -94,7 +102,8 @@ export default {
 			icon: () => h('div', {
 				class: 'i-simple-icons:bilibili scale-90'
 			}),
-			is_external: true
+			is_external: true,
+			hide: false
 		},
 		{
 			name: 'Github',
@@ -102,7 +111,8 @@ export default {
 			icon: () => h(NIcon, {
 				component: GithubOutlined
 			}),
-			is_external: true
+			is_external: true,
+			hide: false
 		}
 	],
 	explores: [
