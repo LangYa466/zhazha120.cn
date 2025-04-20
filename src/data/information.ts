@@ -25,7 +25,7 @@ interface Information {
 
 	readonly tags: Tag[]
 	readonly contacts: Button[]
-	readonly buttons: Button[]
+	readonly explores: Button[]
 	readonly tools: Button[]
 
 	readonly codetime_id: number | null
@@ -105,7 +105,7 @@ export default {
 			is_external: true
 		}
 	],
-	buttons: [
+	explores: [
 		{
 			name: '个人群',
 			href: 'https://qm.qq.com/cgi-bin/qm/qr?k=J0VLGhPqQMYw8j6u4v5_-o4o-gnwA6MW&authKey=G7bGP4NM1k0MO/kH+xKVlEjk9gbR2AOXCxMRDjtrqQSDxwQvAxGdseQ1uyhj9nNb',

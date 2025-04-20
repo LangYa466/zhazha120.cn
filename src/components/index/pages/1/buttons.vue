@@ -27,7 +27,7 @@ const showToolsModal = ref(false)
 					<n-icon :component="LinkOutlined"/>
 				</template>
 
-				有用的按钮
+				探索我
 			</n-button>
 
 			<n-button @click="showToolsModal = !showToolsModal">
@@ -35,21 +35,21 @@ const showToolsModal = ref(false)
 					<n-icon :component="ToolOutlined"/>
 				</template>
 
-				在线工具
+				小工具
 			</n-button>
 		</n-flex>
 	</div>
 
 	<div class="desktop-only">
 		<n-flex vertical>
-			<Buttons :buttons="information.buttons"/>
+			<Buttons :buttons="information.explores"/>
 			<Buttons :buttons="information.tools"/>
 		</n-flex>
 	</div>
 
 	<n-modal v-model:show="showButtonsModal" class="modal" preset="card" title="有用的按钮">
 		<div class="overflow-scroll">
-			<Buttons :buttons="information.buttons"/>
+			<Buttons :buttons="information.explores"/>
 		</div>
 	</n-modal>
 
