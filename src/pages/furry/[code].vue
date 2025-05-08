@@ -3,7 +3,7 @@ import { NCard } from 'naive-ui'
 import { isMobile } from '~/shared/responsive'
 
 definePageMeta({
-	name: '兽兽详情'
+	name: '兽设详情'
 })
 
 const route = useRoute()

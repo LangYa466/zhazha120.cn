@@ -1,196 +1,178 @@
 <script lang="ts" setup>
-import { CalendarOutlined, DownloadOutlined, ManOutlined } from '@vicons/antd'
-import { CurrentLocation, Man } from '@vicons/tabler'
-import dom2image from 'dom-to-image'
-import furry_be6367f330fbb49da59f46cfb063b7fbfba41732 from '~/assets/furry_be6367f330fbb49da59f46cfb063b7fbfba41732.webp'
-import information from '~/data/information'
+
+import { CalendarOutlined } from '@vicons/antd'
+import { Bone, CurrentLocation, Man, Puzzle, Ruler, ZodiacTaurus } from '@vicons/tabler'
+import { isDesktop, isMobile } from '~/shared/responsive'
 
 definePageMeta({
 	name: '扩列条'
 })
-
-const container = useTemplateRef<HTMLDivElement>('container')
-
-const scale = ref(3)
-
-const download = async () => {
-	if (container.value === null) {
-		return
-	}
-
-	const url = await dom2image.toPng(container.value, {
-		width: container.value.clientWidth * scale.value,
-		height: container.value.clientHeight * scale.value,
-		style: {
-			transform: `scale(${scale.value})`,
-			transformOrigin: 'top left'
-		}
-	})
-
-	const a = document.createElement('a')
-
-	a.download = 'intro.png'
-	a.href = url
-	a.click()
-}
 </script>
 
 <template>
-	<div class="container mx-auto mt-5">
-		<n-flex vertical>
-			<custom-page-header/>
+	<custom-sub-page>
+		<n-card size="small">
+			<n-flex size="small" vertical>
+				<n-flex align="center" size="small">
+					<span class="text-4xl whitespace-normal">👋 你好, 我是</span>
 
-			<n-card size="small">
-				<n-flex align="center" vertical>
-					<n-form-item :show-feedback="false" label="缩放倍数" label-placement="left">
-						<n-input-number v-model:value="scale" :step="1"/>
-					</n-form-item>
+					<n-flex :size="0" vertical>
+						<span class="text-3xl fw-bold">渣渣120</span>
+						<n-text :depth="3" class="text-sm">简称 渣渣</n-text>
+					</n-flex>
+				</n-flex>
 
-					<div ref="container" class="bg-[#111] p-10">
-						<n-flex vertical>
-							<n-flex justify="center">
-								<n-card class="w-fit" size="small">
-									<n-flex align="center">
-										<div class="size-20">
-											<n-image :img-props="{ class: 'size-full' }" :src="information.avatar" class="rounded-full"/>
-										</div>
+				<n-divider class="!my-0"/>
 
-										<n-flex :size="0" vertical>
-											<n-flex align="center" size="small">
-												<n-h2 class="!my-0 text-3xl fw-extrabold">
-													<n-flex :size="0">
-														<span>渣渣</span>
-														<n-text :depth="3">120</n-text>
-													</n-flex>
-												</n-h2>
+				<n-alert title="注意事项" type="warning">
+					<div class="text-2xl fw-bold">
+						<n-flex :justify="isDesktop ? 'space-between' : undefined" :wrap="false">
+							<span>!!!</span>
+							<span>不会涩涩, 不约, 不是同, 不想恋爱, 不找对象, 不当对象, 只想做自己</span>
+							<span>!!!</span>
+						</n-flex>
+					</div>
+				</n-alert>
 
-												<n-text class="inline-flex" type="info">
-													<n-icon :component="ManOutlined" size="16"/>
-												</n-text>
-											</n-flex>
+				<div class="h-5"/>
 
-											<n-text class="text-xl fw-bold" type="success">QQ: 2331281251</n-text>
-										</n-flex>
-									</n-flex>
-								</n-card>
+				<n-flex :vertical="isMobile" size="small" wrap>
+					<n-tag class="md:w-fit">
+						<n-flex :size="0" align="center">
+							<n-icon :component="CurrentLocation"/>
 
-								<n-card class="w-fit" size="small">
-									<n-flex align="center" size="small">
-										<n-icon :component="CurrentLocation" size="16"/>
-										<span>江西省 赣州市 章贡区</span>
-									</n-flex>
+							<span class="ml-1">江西省 赣州市 章贡区</span>
+						</n-flex>
+					</n-tag>
 
-									<n-flex align="center" size="small">
-										<n-icon :component="CalendarOutlined" size="16"/>
+					<n-tag class="md:w-fit">
+						<n-flex :size="0" align="center">
+							<n-icon :component="Man"/>
 
-										<n-flex :size="0">
-											<span>2006/5/7</span>
+							<span class="ml-1">男</span>
+						</n-flex>
+					</n-tag>
 
-											<n-text :depth="3" class="scale-80">(属狗 金牛座)</n-text>
-										</n-flex>
-									</n-flex>
+					<n-tag class="md:w-fit">
+						<n-flex :size="0" align="center">
+							<n-icon :component="CalendarOutlined"/>
 
-									<n-flex align="center" size="small">
-										<n-icon :component="Man" size="16"/>
+							<span class="ml-1">2006/5/7</span>
+						</n-flex>
+					</n-tag>
 
-										<n-flex size="small">
-											<n-text type="info">INTJ-A-H</n-text>
-											<n-text type="warning">176cm 99kg</n-text>
-										</n-flex>
-									</n-flex>
-								</n-card>
-							</n-flex>
+					<n-tag class="md:w-fit">
+						<n-flex :size="0" align="center">
+							<n-icon :component="Bone"/>
 
-							<n-card class="w-fit mx-auto" size="small">
-								<n-flex size="small">
-									<span>学习很差 目前是</span>
-									<n-text type="info">江西应用工程职业学院 (下埠校区) 24 级新生</n-text>
-									<n-text type="warning">计算机应用技术专业</n-text>
-								</n-flex>
-							</n-card>
+							<span class="ml-1">属狗</span>
+						</n-flex>
+					</n-tag>
 
-							<n-alert title="注意事项" type="warning">
-								<n-flex justify="space-between">
-									<span class="text-xl fw-bold">!!!</span>
+					<n-tag class="md:w-fit">
+						<n-flex :size="0" align="center">
+							<n-icon :component="ZodiacTaurus"/>
 
-									<span class="text-2xl fw-extrabold">
-							不会涩涩 不约 不是同 不想恋爱 不找对象 不当对象 只想做自己
-						</span>
+							<span class="ml-1">金牛座</span>
+						</n-flex>
+					</n-tag>
 
-									<span class="text-xl fw-bold">!!!</span>
-								</n-flex>
-							</n-alert>
+					<n-tag class="md:w-fit">
+						<n-flex :size="0" align="center">
+							<n-icon :component="Ruler"/>
 
-							<n-flex>
-								<n-card class="flex-1" size="small">
-									<n-flex>
-										<n-image :img-props="{ class: 'size-full' }" :src="furry_be6367f330fbb49da59f46cfb063b7fbfba41732" class="w-90"/>
+							<span class="ml-1">176cm 94kg</span>
+						</n-flex>
+					</n-tag>
 
-										<n-flex :size="0" vertical>
-											<span>是只福瑞</span>
-											<n-text type="info">物种是狗 !</n-text>
-											<n-text type="error">不可以戳 !!</n-text>
-											<n-text :depth="3">暂时还没有名字</n-text>
-										</n-flex>
-									</n-flex>
-								</n-card>
+					<n-tag class="md:w-fit">
+						<n-flex :size="0" align="center">
+							<n-icon :component="Puzzle"/>
 
-								<n-flex class="flex-1" vertical>
-									<n-card size="small">
-										<n-flex :size="0" vertical>
-											<span class="text-xl">是全栈开发</span>
+							<span class="ml-1">INTJ-A-H</span>
+						</n-flex>
+					</n-tag>
+				</n-flex>
 
-											<div class="h-1"/>
+				<div class="h-5"/>
 
-											<n-flex size="small">
-												<span>有自己的个人网站: </span>
-												<n-text type="success">https://zhazha120.cn</n-text>
-											</n-flex>
+				<n-flex :size="0" vertical>
+					<n-text type="success">全栈开发 是只福瑞</n-text>
 
-											<div class="h-1"/>
+					<n-flex :size="0">
+						<n-text type="error">学习很差</n-text>
+						<span class="mx-1">目前在</span>
+						<n-text type="info">目前在江西应用工程职业学院 (下埠校区)</n-text>
+						<span class="mx-1">就读</span>
+						<span class="mr-1">专业是</span>
+						<n-text type="success">计算机应用技术</n-text>
+					</n-flex>
 
-											<n-text type="info">或许啥技术都会点 喜欢探索尝试新东西</n-text>
-											<n-text type="info">喜欢开源 有良好的 git 提交消息规范</n-text>
+					<n-text :depth="3" delete>也许是一名不合格的全栈开发者</n-text>
 
-											<div class="h-1"/>
+					<n-text type="info">或许啥技术都会点 喜欢探索尝试新东西</n-text>
+					<n-text type="success">喜欢开源 有良好的 git 提交消息规范</n-text>
+				</n-flex>
 
-											<n-text :depth="3">
-												喜欢玩 <span class="fw-extrabold">现代俄罗斯方块</span> 和 <span class="fw-extrabold">4k</span>
-											</n-text>
-										</n-flex>
-									</n-card>
+				<n-flex :size="0" align="center">
+					<span>也可以在</span>
 
-									<n-alert type="error">
-										不抽烟 不喝酒 不会打麻将
-									</n-alert>
+					<div class="mx-1">
+						<router-link v-slot="{ href }" :to="{ name: '首页' }">
+							<n-a :href="href" type="primary">首页</n-a>
+						</router-link>
+					</div>
 
-									<n-alert type="success">
-										<template #icon>😋</template>
+					<span>中了解到我的其它信息, 包括</span>
 
-										爱喝奶茶 并尤其喜欢古茗 (?)
-									</n-alert>
+					<div class="ml-1">
+						<n-flex align="center" size="small">
+							<n-tag type="info">社交账号</n-tag>
 
-									<n-card size="small">
-										可以面基 但仅限见面 可能比较社恐 遇到不知道聊什么的尴尬情况可能会一直看手机 希望不要嫌弃我...
-									</n-card>
-								</n-flex>
-							</n-flex>
+							<n-tag type="info">
+								<router-link v-slot="{ href }" :to="{ name: '游戏' }">
+									<n-a :href="href">玩的游戏</n-a>
+								</router-link>
+							</n-tag>
+
+							<n-tag type="info">
+								<router-link v-slot="{ href }" :to="{ name: '兽设列表' }">
+									<n-a :href="href">我的兽设</n-a>
+								</router-link>
+							</n-tag>
+
+							<n-tag type="info">加入的组织</n-tag>
+							<n-tag type="info">做过的项目</n-tag>
+
+							<span>和</span>
+
+							<n-tag type="info">好朋友们</n-tag>
 						</n-flex>
 					</div>
 				</n-flex>
 
-				<template #action>
-					<div class="text-center">
-						<n-button @click="download">
-							<template #icon>
-								<n-icon :component="DownloadOutlined"/>
-							</template>
+				<n-divider class="!my-0"/>
 
-							下载
-						</n-button>
-					</div>
-				</template>
-			</n-card>
-		</n-flex>
-	</div>
+				<div class="leading-tight">
+					<n-text type="error">🙅‍ 不抽烟 不酗酒 不会打麻将</n-text>
+					<br>
+					<n-text type="success">😋 爱喝奶茶 并尤其喜欢古茗 (?)</n-text>
+				</div>
+
+				<n-divider class="!my-0"/>
+
+				<div class="leading-tight">
+					<n-text type="error">在现实中大多数场景下不合群</n-text>
+					<br>
+					<n-text type="info">被动型发言, 没有雷点, 想和所有人交朋友, 不怕烦 !</n-text>
+					<br>
+					<n-text type="warning">内耗型, 如非必要不会麻烦别人</n-text>
+					<br>
+					<n-text type="success">欢迎找我聊天 !</n-text>
+					<br><br>
+					<n-text type="error">只有一点 如非必要请麻烦尽量文字交流 或者你说话我打字 不是很敢在网络上对陌生人说话 QAQ</n-text>
+				</div>
+			</n-flex>
+		</n-card>
+	</custom-sub-page>
 </template>
