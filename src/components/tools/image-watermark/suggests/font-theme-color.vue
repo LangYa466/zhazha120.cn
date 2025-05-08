@@ -13,10 +13,6 @@ const colors = asyncComputed(async () => {
 	}
 
 	return await rgbaster(toolsImageWatermarkStore.image.src, {
-		ignore: [
-			'rgb(255,255,255)',
-			'rgb(0,0,0)'
-		],
 		skipTransparentPixels: true
 	})
 }, null)
@@ -55,7 +51,7 @@ const applied = computed(() => {
 </script>
 
 <template>
-	<template v-if="color">
+	<template v-if="color !== null && colors !== null">
 		<n-button-group>
 			<n-button :disabled="index === 0" @click="index = index - 1">-</n-button>
 
@@ -67,7 +63,7 @@ const applied = computed(() => {
 				<span :style="{ color }">字色应用主题色 ({{ color.split('(')[1].split(')')[0].split(',').join(', ') }})</span>
 			</n-button>
 
-			<n-button :disabled="index === colors.value - 1" @click="index = index + 1">+</n-button>
+			<n-button :disabled="index === colors.length - 1" @click="index = index + 1">+</n-button>
 		</n-button-group>
 	</template>
 </template>

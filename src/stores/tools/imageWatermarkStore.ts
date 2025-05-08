@@ -54,12 +54,8 @@ export const useToolsImageWatermarkStore = defineStore('tools.image-watermark', 
 		}
 	},
 	actions: {
-		async processUploadFile(uploadFile: UploadFileInfo) {
-			if (uploadFile.file === undefined || uploadFile.file === null) {
-				return
-			}
-
-			const src = URL.createObjectURL(uploadFile.file)
+		async processUploadFile(file: File) {
+			const src = URL.createObjectURL(file)
 
 			const [width, height] = await new Promise<[number, number]>(resolve => {
 				const image = document.createElement('img')

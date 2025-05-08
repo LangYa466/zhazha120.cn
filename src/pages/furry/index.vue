@@ -1,42 +1,51 @@
 <script lang="ts" setup>
+
 definePageMeta({
 	name: '兽设列表'
 })
 
-const furries = await queryCollection('furry').all()
+const furries = useAsyncData(async () => {
+	return await queryCollection('furry').all()
+})
 
-const route = useRoute()
 const router = useRouter()
 
 const handleClick = (code: string) => {
 	router.push({
-		path: `${route.path}/${code}`
+		name: '兽兽详情',
+		params: {
+			code
+		}
 	})
 }
 </script>
 
 <template>
-	<div class="container mx-auto mt-5">
-		<n-flex vertical>
-			<custom-page-header/>
+	<custom-sub-page>
+		<custom-async-data-adapter :value="furries">
+			<template #pending>
+				<n-card size="small">
+					<n-flex justify="center">
+						<n-spin/>
+					</n-flex>
+				</n-card>
+			</template>
 
-			<n-card size="small">
-				<n-flex align="center" class="lt-sm:(!flex-col items-center)">
-					<template v-for="furry in furries">
-						<div class="transition-(transform duration-150) hover:scale-105 cursor-pointer" @click="handleClick(furry.code)">
-							<n-flex vertical>
-								<n-image :img-props="{ class: 'w-60' }" :src="loadAsset(`furry_${furry.image_hash}`).value" preview-disabled/>
+			<template #success="{ data }">
+				<n-flex size="small">
+					<template v-for="furry in data">
+						<n-card class="w-100 cursor-pointer" size="small" @click="handleClick(furry.code)">
+							<template #cover>
+								<n-image :src="loadAsset(`furry_${furry.image_hash}`).value" @click.stop/>
+							</template>
 
-								<n-flex :size="0" align="center" justify="center">
-									<n-text>{{ furry.name }}</n-text>
-									<n-divider vertical/>
-									<n-text>{{ furry.animal }}</n-text>
-								</n-flex>
-							</n-flex>
-						</div>
+							<div class="lt-sm:text-center">
+								<furry-info :value="furry"/>
+							</div>
+						</n-card>
 					</template>
 				</n-flex>
-			</n-card>
-		</n-flex>
-	</div>
+			</template>
+		</custom-async-data-adapter>
+	</custom-sub-page>
 </template>

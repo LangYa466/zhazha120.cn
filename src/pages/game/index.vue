@@ -5,19 +5,11 @@ definePageMeta({
 </script>
 
 <template>
-	<div class="container mx-auto mt-5">
-		<n-flex vertical>
-			<custom-page-header/>
-
-			<game-minecraft/>
-
-			<game-geometrydash/>
-
-			<game-tetrio/>
-
-			<game-osumania/>
-
-			<game-malody/>
-		</n-flex>
-	</div>
+	<custom-sub-page>
+		<game-minecraft/>
+		<game-geometrydash/>
+		<game-tetrio/>
+		<game-osumania/>
+		<game-malody/>
+	</custom-sub-page>
 </template>

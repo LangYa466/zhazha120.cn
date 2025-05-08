@@ -1,17 +1,17 @@
 <script lang="ts" setup>
 import organizations from '~/data/organizations'
-import { isDesktop, isMobile } from '~/shared/isMobile'
+import { isMobile } from '~/shared/responsive'
 </script>
 
 <template>
-	<n-flex :vertical="isMobile" inline justify="center">
+	<n-flex :vertical="isMobile" justify="center">
 		<template v-for="organization in organizations">
 			<div class="transition-(opacity duration-300) hover:opacity-50 cursor-pointer" @click="showRedirectExternalWebsiteWarningModal(`https://github.com/orgs/${organization.name}`)">
-				<n-card :class="{ 'h-full': isDesktop }" size="small">
-					<n-flex :class="{ 'h-full': isDesktop }" :wrap="false" align="center" inline size="small">
-						<n-image :img-props="{ class: 'size-full' }" :src="(`https://avatars.githubusercontent.com/u/${organization.avatar_id}`)" class="h-10 rounded-full" preview-disabled/>
+				<n-card class="md:h-full" size="small">
+					<n-flex :wrap="false" align="center" class="md:h-full" size="small">
+						<n-image :img-props="{ class: 'size-full' }" :src="(`https://avatars.githubusercontent.com/u/${organization.avatar_id}`)" class="h-10 rounded-full" @click.stop/>
 
-						<n-flex :size="0" inline vertical>
+						<n-flex :size="0" vertical>
 							<span class="fw-bold">{{ organization.description ?? organization.name }}</span>
 
 							<template v-if="organization.description !== null">

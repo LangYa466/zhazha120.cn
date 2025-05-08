@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { isMobile } from '~/shared/responsive'
 import { useToolsImageWatermarkStore } from '~/stores/tools/imageWatermarkStore'
 
 definePageMeta({
@@ -9,18 +10,14 @@ const toolsImageWatermarkStore = useToolsImageWatermarkStore()
 </script>
 
 <template>
-	<div class="container mx-auto mt-5">
-		<n-flex vertical>
-			<custom-page-header/>
+	<custom-sub-page>
+		<tools-image-watermark-uploader/>
 
-			<tools-image-watermark-uploader/>
-
-			<template v-if="toolsImageWatermarkStore.image !== null">
-				<n-flex :wrap="false" class="lt-md:!flex-col-reverse">
-					<tools-image-watermark-editor/>
-					<tools-image-watermark-generator/>
-				</n-flex>
-			</template>
-		</n-flex>
-	</div>
+		<template v-if="toolsImageWatermarkStore.image !== null">
+			<n-flex :reverse="isMobile" :vertical="isMobile" :wrap="false">
+				<tools-image-watermark-editor/>
+				<tools-image-watermark-generator/>
+			</n-flex>
+		</template>
+	</custom-sub-page>
 </template>

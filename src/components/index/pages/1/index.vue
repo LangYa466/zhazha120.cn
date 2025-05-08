@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { isDesktop } from '~/shared/isMobile.js'
+import { isDesktop } from '~/shared/responsive'
 </script>
 
 <template>
-	<div :class="{ 'min-h-screen relative': isDesktop }">
-		<div :class="{ 'absolute top-1/2 left-1/2 -translate-1/2': isDesktop }">
+	<div class="md:(min-h-screen relative)">
+		<div class="md:(absolute top-1/2 left-1/2 -translate-1/2)">
 			<n-flex align="center" vertical>
 				<index-pages-1-intro/>
 
@@ -12,7 +12,7 @@ import { isDesktop } from '~/shared/isMobile.js'
 
 				<n-divider class="!my-0"/>
 
-				<n-flex :vertical="isDesktop" inline justify="center" size="small">
+				<n-flex :vertical="isDesktop" justify="center" size="small">
 					<index-pages-1-contacts/>
 					<index-pages-1-buttons/>
 				</n-flex>

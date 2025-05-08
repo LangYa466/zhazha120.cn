@@ -1,14 +1,14 @@
 <script lang="ts" setup>
 import { GithubOutlined } from '@vicons/antd'
 import { website as website_stacks } from '~/data/stacks'
-import { isDesktop, isMobile } from '~/shared/isMobile'
+import { isDesktop, isMobile } from '~/shared/responsive'
 </script>
 
 <template>
 	<n-card size="small">
 		<n-flex :align="isMobile ? 'center' : undefined" :vertical="isMobile" justify="space-between">
-			<n-flex :vertical="isMobile" align="center" inline size="small">
-				<n-flex align="center" inline size="small">
+			<n-flex :vertical="isMobile" align="center" size="small">
+				<n-flex align="center" size="small">
 					<span>设计 & 制作:</span>
 
 					<n-button text type="info" @click="showRedirectExternalWebsiteWarningModal('https://github.com/WOSHIZHAZHA120')">
@@ -20,10 +20,10 @@ import { isDesktop, isMobile } from '~/shared/isMobile'
 					<n-divider class="!mx-0" vertical/>
 				</template>
 
-				<n-flex align="center" inline size="small">
+				<n-flex align="center" size="small">
 					<span>技术栈:</span>
 
-					<n-flex inline size="small">
+					<n-flex size="small">
 						<template v-for="stack in website_stacks">
 							<n-popover>
 								<template #trigger>
@@ -41,15 +41,13 @@ import { isDesktop, isMobile } from '~/shared/isMobile'
 				</n-flex>
 			</n-flex>
 
-			<n-flex inline>
-				<n-button @click="showRedirectExternalWebsiteWarningModal('https://github.com/WOSHIZHAZHA120/zhazha120.cn')">
-					<template #icon>
-						<Component :is="GithubOutlined"/>
-					</template>
+			<n-button @click="showRedirectExternalWebsiteWarningModal('https://github.com/WOSHIZHAZHA120/zhazha120.cn')">
+				<template #icon>
+					<Component :is="GithubOutlined"/>
+				</template>
 
-					Github
-				</n-button>
-			</n-flex>
+				Github
+			</n-button>
 		</n-flex>
 	</n-card>
 </template>

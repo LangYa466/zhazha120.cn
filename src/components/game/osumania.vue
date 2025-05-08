@@ -1,32 +1,33 @@
 <script lang="ts" setup>
 import osumania from '~/data/osumania'
+import { isDesktop, isMobile } from '~/shared/responsive'
 </script>
 
 <template>
 	<n-card size="small" title="osu!mania">
-		<n-flex vertical>
-			<n-flex :size="0" class="lt-md:(!flex-col text-center)" justify="space-evenly">
+		<n-flex size="small" vertical>
+			<n-flex :align="isMobile ? 'center' : undefined" :vertical="isMobile" justify="space-evenly">
 				<span class="text-blue-300 fw-bold">叠 (Jack): {{ osumania.jack }}</span>
 
-				<div class="desktop-only">
+				<div v-if="isDesktop">
 					<n-divider class="!my-0" vertical/>
 				</div>
 
 				<span class="text-yellow-300 fw-bold">技 (Tech): {{ osumania.tech }}</span>
 
-				<div class="desktop-only">
+				<div v-if="isDesktop">
 					<n-divider class="!my-0" vertical/>
 				</div>
 
 				<span class="text-red-300 fw-bold">乱 (Speed): {{ osumania.speed }}</span>
 
-				<div class="desktop-only">
+				<div v-if="isDesktop">
 					<n-divider class="!my-0" vertical/>
 				</div>
 
 				<span class="text-green-300 fw-bold">切 (Stream): {{ osumania.stream }}</span>
 
-				<div class="desktop-only">
+				<div v-if="isDesktop">
 					<n-divider class="!my-0" vertical/>
 				</div>
 
@@ -39,7 +40,7 @@ import osumania from '~/data/osumania'
 		</n-flex>
 
 		<template #action>
-			<n-flex align="center" class="lt-md:!flex-col">
+			<n-flex justify="center" size="small" wrap>
 				<template v-for="button in osumania.buttons">
 					<custom-button v-bind="button"/>
 				</template>

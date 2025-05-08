@@ -11,6 +11,7 @@ const check = () => {
 	document.body.appendChild(div)
 
 	isMobile.value = div.offsetParent !== null
+
 	isDesktop.value = div.offsetParent === null
 
 	div.remove()

@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import tetrio from '~/data/tetrio'
+import { isMobile } from '~/shared/responsive'
 
-const generateOverlay = (layout: 'horizontal' | 'vertical') => {
+const overlay = computed(() => {
 	const query = Object.entries({
 		username: tetrio.id,
 		'display-name': true,
@@ -16,7 +17,7 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 		'display-standingsets-sprint': true,
 		'display-standingsets-blitz': true,
 		alignment: 'top',
-		layout,
+		layout: isMobile ? 'vertical' : 'horizontal',
 		league: ['apm', 'pps', 'vs', 'x_winrate', 'percentile'].join('+'),
 		sprint: ['pieces', 'pps', 'ff', 'kpp', 'kps', 'quads'].join('+'),
 		blitz: ['pps', 'ff', 'spp', 'pieces', 'pieces', 'quads', 'tspins', 'allclears'].join('+')
@@ -25,14 +26,14 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 	}).join('&')
 
 	return `https://tetr.fires.bz/overlay/user?${query}`
-}
+})
 </script>
 
 <template>
 	<n-card size="small" title="tetr.io">
-		<n-flex vertical>
-			<n-flex class="lt-md:(!flex-col items-center)" justify="space-evenly">
-				<n-flex align="center" vertical>
+		<n-flex size="small" vertical>
+			<n-flex :align="isMobile ? 'center' : undefined" :vertical="isMobile" justify="space-evenly" size="small">
+				<n-flex align="center" size="small" vertical>
 					<n-text class="fw-bold" type="info">40L</n-text>
 
 					<n-divider class="!my-0"/>
@@ -48,7 +49,7 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 					</n-timeline>
 				</n-flex>
 
-				<n-flex align="center" vertical>
+				<n-flex align="center" size="small" vertical>
 					<n-text class="fw-bold" type="warning">Blitz</n-text>
 
 					<n-divider class="!my-0"/>
@@ -64,7 +65,7 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 					</n-timeline>
 				</n-flex>
 
-				<n-flex align="center" vertical>
+				<n-flex align="center" size="small" vertical>
 					<n-text class="fw-bold" type="error">第 1 赛季 段位</n-text>
 
 					<n-divider class="!my-0"/>
@@ -86,7 +87,7 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 					</n-timeline>
 				</n-flex>
 
-				<n-flex align="center" vertical>
+				<n-flex align="center" size="small" vertical>
 					<n-text class="fw-bold" type="success">第 2 赛季 段位</n-text>
 
 					<n-divider class="!my-0"/>
@@ -109,8 +110,7 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 				</n-flex>
 			</n-flex>
 
-			<iframe :src="generateOverlay('horizontal')" class="desktop-only border-none w-full h-250 md:h-60"/>
-			<iframe :src="generateOverlay('vertical')" class="mobile-only border-none w-full h-250 md:h-60"/>
+			<iframe :src="overlay" class="border-none w-full h-250 md:h-60"/>
 
 			<n-divider class="!my-0">背景</n-divider>
 
@@ -118,7 +118,7 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 		</n-flex>
 
 		<template #action>
-			<n-flex align="center" class="lt-md:!flex-col">
+			<n-flex justify="center" size="small" wrap>
 				<template v-for="button in tetrio.buttons">
 					<custom-button v-bind="button"/>
 				</template>
@@ -126,7 +126,3 @@ const generateOverlay = (layout: 'horizontal' | 'vertical') => {
 		</template>
 	</n-card>
 </template>
-
-<style lang="scss" scoped>
-@use '~/styles/utils';
-</style>

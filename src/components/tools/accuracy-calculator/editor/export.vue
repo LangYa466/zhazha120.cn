@@ -41,7 +41,7 @@ const downloadExport = () => {
 </script>
 
 <template>
-	<div class="text-center">
+	<n-flex justify="center">
 		<n-button secondary type="success" @click="saveAsPreset">
 			<template #icon>
 				<n-icon :component="SaveOutlined"/>
@@ -49,15 +49,15 @@ const downloadExport = () => {
 
 			保存为预设
 		</n-button>
-	</div>
+	</n-flex>
 
 	<n-modal v-model:show="showExportModal" class="modal" preset="card" title="保存结果">
-		<n-flex vertical>
-			<n-scrollbar x-scrollable>
-				<n-code :code="exportData" language="json" show-line-numbers/>
-			</n-scrollbar>
+		<n-scrollbar x-scrollable>
+			<n-code :code="exportData" language="json" show-line-numbers/>
+		</n-scrollbar>
 
-			<div class="text-center">
+		<template #action>
+			<n-flex justify="center">
 				<n-button @click="downloadExport">
 					<template #icon>
 						<n-icon :component="DownloadOutlined"/>
@@ -65,8 +65,8 @@ const downloadExport = () => {
 
 					下载
 				</n-button>
-			</div>
-		</n-flex>
+			</n-flex>
+		</template>
 	</n-modal>
 </template>
 

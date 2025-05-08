@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { MoreOutlined, SearchOutlined } from '@vicons/antd'
 import information from '~/data/information'
-import { isMobile } from '~/shared/isMobile'
+import { isMobile } from '~/shared/responsive'
 
 const { define: ContactsDefine, reuse: Contacts } = createReusableTemplate<{
 	readonly contacts: typeof information.contacts
@@ -11,11 +11,11 @@ const { define: ContactsDefine, reuse: Contacts } = createReusableTemplate<{
 <template>
 	<ContactsDefine v-slot="{ contacts }">
 		<template v-for="button in contacts">
-			<custom-button secondary v-bind="button"/>
+			<custom-button :block="isMobile" secondary v-bind="button"/>
 		</template>
 	</ContactsDefine>
 
-	<n-flex :wrap="false" inline justify="center" size="small">
+	<n-flex :wrap="false" justify="center" size="small">
 		<template v-if="isMobile">
 			<custom-modal preset="card" title="找到我">
 				<template #trigger="{ toggle }">
@@ -28,7 +28,7 @@ const { define: ContactsDefine, reuse: Contacts } = createReusableTemplate<{
 					</n-button>
 				</template>
 
-				<n-flex inline justify="center" size="small">
+				<n-flex :vertical="isMobile" justify="center" size="small">
 					<Contacts :contacts="information.contacts"/>
 				</n-flex>
 			</custom-modal>
@@ -48,7 +48,7 @@ const { define: ContactsDefine, reuse: Contacts } = createReusableTemplate<{
 					</n-button>
 				</template>
 
-				<n-flex inline justify="center" size="small">
+				<n-flex justify="center" size="small">
 					<Contacts :contacts="information.contacts.filter(contact => contact.hide)"/>
 				</n-flex>
 			</custom-modal>

@@ -27,7 +27,9 @@ const handleClick = () => {
 		</template>
 
 		<slot name="content">
-			{{ props.name }}
+			<div class="overflow-scroll">
+				<span>{{ props.name }}</span>
+			</div>
 		</slot>
 	</n-button>
 </template>

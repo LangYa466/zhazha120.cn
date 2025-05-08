@@ -44,8 +44,8 @@ const toolsImageWatermarkStore = useToolsImageWatermarkStore()
 					<n-input-number v-model:value="toolsImageWatermarkStore.watermark.fontWeight" :step="1"/>
 				</n-form-item>
 
-				<n-form-item :show-feedback="false" label="字体颜色">
-					<n-input v-model:value="toolsImageWatermarkStore.watermark.fontColor"/>
+				<n-form-item :show-feedback="false" class="w-4/5" label="字体颜色">
+					<n-color-picker v-model:value="toolsImageWatermarkStore.watermark.fontColor"/>
 				</n-form-item>
 
 				<n-form-item :show-feedback="false" label="是否展示全屏">

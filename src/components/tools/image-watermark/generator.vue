@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { DownloadOutlined } from '@vicons/antd'
+import { CopyOutlined, DownloadOutlined } from '@vicons/antd'
 import dom2image from 'dom-to-image'
 import { useToolsImageWatermarkStore } from '~/stores/tools/imageWatermarkStore'
 
@@ -7,7 +7,7 @@ const toolsImageWatermarkStore = useToolsImageWatermarkStore()
 
 const container = useTemplateRef<HTMLDivElement>('container')
 
-const download = async () => {
+const generate = async () => {
 	if (toolsImageWatermarkStore.image === null) {
 		return
 	}
@@ -16,10 +16,52 @@ const download = async () => {
 		return
 	}
 
-	const url = await dom2image.toPng(container.value, {
+	return await dom2image.toBlob(container.value, {
 		width: toolsImageWatermarkStore.image.width,
 		height: toolsImageWatermarkStore.image.height
 	})
+}
+
+const clipboard = useClipboardItems()
+
+const message = useMessage()
+
+const copy = async () => {
+	if (!clipboard.isSupported.value) {
+		message.error('当前环境不允许复制')
+		return
+	}
+
+	const blob = await generate()
+
+	if (blob === undefined) {
+		return
+	}
+
+	await clipboard.copy([
+		new ClipboardItem({
+			[blob.type]: blob
+		})
+	])
+
+	await nextTick(() => {
+		if (!clipboard.copied.value) {
+			message.error('复制失败')
+			return
+		}
+
+		message.success('复制成功!')
+	})
+}
+
+const download = async () => {
+	const blob = await generate()
+
+	if (blob === undefined) {
+		return
+	}
+
+	const url = URL.createObjectURL(blob)
 
 	const a = document.createElement('a')
 
@@ -72,7 +114,15 @@ const download = async () => {
 			</div>
 
 			<template #action>
-				<div class="text-center">
+				<n-flex justify="center" size="small">
+					<n-button @click="copy">
+						<template #icon>
+							<n-icon :component="CopyOutlined"/>
+						</template>
+
+						复制
+					</n-button>
+
 					<n-button @click="download">
 						<template #icon>
 							<n-icon :component="DownloadOutlined"/>
@@ -80,7 +130,7 @@ const download = async () => {
 
 						下载
 					</n-button>
-				</div>
+				</n-flex>
 			</template>
 		</n-card>
 	</template>

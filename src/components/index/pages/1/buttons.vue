@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { LinkOutlined, ToolOutlined } from '@vicons/antd'
 import information from '~/data/information'
-import { isMobile } from '~/shared/isMobile'
+import { isMobile } from '~/shared/responsive'
 import type Button from '~/types/button'
 
 const { define: ButtonsDefine, reuse: Buttons } = createReusableTemplate<{
@@ -11,15 +11,15 @@ const { define: ButtonsDefine, reuse: Buttons } = createReusableTemplate<{
 
 <template>
 	<ButtonsDefine v-slot="{ buttons }">
-		<n-flex align="center" inline justify="center">
+		<n-flex :vertical="isMobile" align="center" justify="center" size="small">
 			<template v-for="button in buttons">
-				<custom-button v-bind="button"/>
+				<custom-button :block="isMobile" v-bind="button"/>
 			</template>
 		</n-flex>
 	</ButtonsDefine>
 
 	<template v-if="isMobile">
-		<n-flex inline justify="center">
+		<n-flex justify="center" size="small">
 			<custom-modal preset="card" title="探索我">
 				<template #trigger="{ toggle }">
 					<n-button @click="toggle">
@@ -51,7 +51,7 @@ const { define: ButtonsDefine, reuse: Buttons } = createReusableTemplate<{
 	</template>
 
 	<template v-else>
-		<n-flex align="center" inline vertical>
+		<n-flex align="center" size="small" vertical>
 			<template v-for="buttons in [information.explores, information.tools]">
 				<Buttons :buttons="buttons"/>
 			</template>
