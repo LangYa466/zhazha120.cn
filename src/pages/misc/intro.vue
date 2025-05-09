@@ -15,10 +15,10 @@ definePageMeta({
 			<n-flex size="small" vertical>
 				<div class="lt-md:text-center">
 					<n-flex :justify="isMobile ? 'center' : undefined" align="center" size="small">
-						<span class="text-4xl whitespace-normal">👋 你好, 我是</span>
+						<span class="text-4xl fw-bold whitespace-normal">👋 你好 我是</span>
 
 						<n-flex :size="0" vertical>
-							<span class="text-3xl fw-bold">渣渣120</span>
+							<span class="text-3xl fw-extrabold">渣渣120</span>
 							<n-text :depth="3" class="text-sm">简称 渣渣</n-text>
 						</n-flex>
 					</n-flex>
@@ -26,11 +26,21 @@ definePageMeta({
 
 				<n-divider class="!my-0"/>
 
-				<n-alert title="注意事项" type="warning">
-					<div class="text-2xl fw-bold">
-						<n-flex :justify="isDesktop ? 'space-between' : undefined" :wrap="false">
+				<n-alert :show-icon="false" type="warning">
+					<div class="text-2xl fw-bold lt-md:text-center">
+						<n-flex :justify="isDesktop ? 'space-between' : undefined" :vertical="isMobile" :wrap="false">
 							<n-text type="warning">!!!!!!</n-text>
-							<span>不涩涩, 不约, 不是同, 不谈恋爱, 不找对象, 不当对象, 只想做自己, 喜欢独立行动</span>
+
+							<n-flex align="center" justify="center" size="small">
+								<n-tag type="error">不涩涩</n-tag>
+								<n-tag type="error">不约</n-tag>
+								<n-tag type="error">不是同</n-tag>
+								<n-tag type="error">不想谈恋爱</n-tag>
+								<n-tag type="error">不找对象</n-tag>
+								<n-tag type="error">不当对象</n-tag>
+								<n-tag type="success">只想做自己 👊</n-tag>
+							</n-flex>
+
 							<n-text type="warning">!!!!!!</n-text>
 						</n-flex>
 					</div>
