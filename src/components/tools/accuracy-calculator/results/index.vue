@@ -6,7 +6,7 @@ const toolsAccuracyCalculatorStore = useToolsAccuracyCalculatorStore()
 
 <template>
 	<n-card size="small">
-		<n-flex align="center" inline size="small" vertical>
+		<n-flex align="center" size="small" vertical>
 			<template v-for="(map, index) in toolsAccuracyCalculatorStore.editor.maps">
 				<n-card size="small">
 					<n-flex align="center" size="small" vertical>

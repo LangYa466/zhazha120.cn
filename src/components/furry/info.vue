@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { isMobile } from '~/shared/responsive'
 import type { FurryCollectionItem } from '~/types/furry'
 
 defineProps<{
@@ -9,7 +10,7 @@ defineProps<{
 <template>
 	<n-flex :size="0" vertical>
 		<div class="fw-bold">
-			<n-flex :size="0" align="center">
+			<n-flex :justify="isMobile ? 'center' : undefined" :size="0" align="center">
 				<n-text>{{ value.name }}</n-text>
 
 				<n-divider vertical/>
@@ -18,6 +19,8 @@ defineProps<{
 			</n-flex>
 		</div>
 
-		<span>{{ value.description }}</span>
+		<div class="lt-md:text-center">
+			<span>{{ value.description }}</span>
+		</div>
 	</n-flex>
 </template>

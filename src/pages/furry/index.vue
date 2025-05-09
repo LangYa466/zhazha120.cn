@@ -12,7 +12,7 @@ const router = useRouter()
 
 const handleClick = (code: string) => {
 	router.push({
-		name: '兽兽详情',
+		name: '兽设详情',
 		params: {
 			code
 		}
@@ -34,7 +34,7 @@ const handleClick = (code: string) => {
 			<template #success="{ data }">
 				<n-flex size="small">
 					<template v-for="furry in data">
-						<n-card class="w-100 cursor-pointer" size="small" @click="handleClick(furry.code)">
+						<n-card class="w-full md:w-100 cursor-pointer" size="small" @click="handleClick(furry.code)">
 							<template #cover>
 								<n-image :src="loadAsset(`furry_${furry.image_hash}`).value" @click.stop/>
 							</template>

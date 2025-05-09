@@ -27,7 +27,7 @@ const handleClick = () => {
 		</template>
 
 		<slot name="content">
-			<div class="overflow-scroll">
+			<div class="overflow-auto">
 				<span>{{ props.name }}</span>
 			</div>
 		</slot>

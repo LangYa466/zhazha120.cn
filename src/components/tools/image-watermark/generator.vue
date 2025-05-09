@@ -74,7 +74,7 @@ const download = async () => {
 <template>
 	<template v-if="toolsImageWatermarkStore.image !== null">
 		<n-card size="small">
-			<div class="size-full overflow-scroll">
+			<div class="size-full overflow-auto">
 				<n-flex justify="center">
 					<div ref="container" :style="toolsImageWatermarkStore.sizeStyles" class="pointer-events-none relative [&>*]:(absolute top-0 left-0)">
 						<n-watermark

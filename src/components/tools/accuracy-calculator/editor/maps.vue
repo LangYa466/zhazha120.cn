@@ -28,7 +28,7 @@ const deleteMap = (index: number) => {
 					</n-form-item>
 
 					<n-form-item :show-feedback="false" label="物量" label-placement="left">
-						<n-input-number v-model:value="map.notes" :min="1" :step="1" placeholder="请输入物量"/>
+						<n-input-number v-model:value="map.notes" :min="1" :step="1" class="w-full" placeholder="请输入物量"/>
 					</n-form-item>
 
 					<n-popconfirm @positive-click="deleteMap(index)">

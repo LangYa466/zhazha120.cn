@@ -13,23 +13,25 @@ definePageMeta({
 	<custom-sub-page>
 		<n-card size="small">
 			<n-flex size="small" vertical>
-				<n-flex align="center" size="small">
-					<span class="text-4xl whitespace-normal">👋 你好, 我是</span>
+				<div class="lt-md:text-center">
+					<n-flex :justify="isMobile ? 'center' : undefined" align="center" size="small">
+						<span class="text-4xl whitespace-normal">👋 你好, 我是</span>
 
-					<n-flex :size="0" vertical>
-						<span class="text-3xl fw-bold">渣渣120</span>
-						<n-text :depth="3" class="text-sm">简称 渣渣</n-text>
+						<n-flex :size="0" vertical>
+							<span class="text-3xl fw-bold">渣渣120</span>
+							<n-text :depth="3" class="text-sm">简称 渣渣</n-text>
+						</n-flex>
 					</n-flex>
-				</n-flex>
+				</div>
 
 				<n-divider class="!my-0"/>
 
 				<n-alert title="注意事项" type="warning">
 					<div class="text-2xl fw-bold">
 						<n-flex :justify="isDesktop ? 'space-between' : undefined" :wrap="false">
-							<span>!!!</span>
-							<span>不会涩涩, 不约, 不是同, 不想恋爱, 不找对象, 不当对象, 只想做自己</span>
-							<span>!!!</span>
+							<n-text type="warning">!!!!!!</n-text>
+							<span>不涩涩, 不约, 不是同, 不谈恋爱, 不找对象, 不当对象, 只想做自己, 喜欢独立行动</span>
+							<n-text type="warning">!!!!!!</n-text>
 						</n-flex>
 					</div>
 				</n-alert>

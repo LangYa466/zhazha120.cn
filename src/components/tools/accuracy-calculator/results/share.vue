@@ -61,7 +61,7 @@ const copy = async (text: string) => {
 		<n-flex size="small" vertical>
 			<template v-for="format in formats">
 				<n-card size="small">
-					<div class="whitespace-pre overflow-scroll">{{ format }}</div>
+					<div class="whitespace-pre overflow-auto">{{ format }}</div>
 
 					<template #action>
 						<n-flex size="small">
