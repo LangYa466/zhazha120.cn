@@ -135,7 +135,7 @@ definePageMeta({
 						</router-link>
 					</div>
 
-					<span>中了解到我的其它信息, 包括</span>
+					<span>中了解到我的其它信息 包括</span>
 
 					<div class="ml-1">
 						<n-flex align="center" size="small">
@@ -176,9 +176,9 @@ definePageMeta({
 				<div class="leading-tight">
 					<n-text type="error">在现实中大多数场景下不合群</n-text>
 					<br>
-					<n-text type="info">被动型发言, 没有雷点, 想和所有人交朋友, 不怕烦 !</n-text>
+					<n-text type="info">被动型发言 没有雷点 想和所有人交朋友 不怕烦 !</n-text>
 					<br>
-					<n-text type="warning">内耗型, 如非必要不会麻烦别人</n-text>
+					<n-text type="warning">内耗型 如非必要不会麻烦别人</n-text>
 					<br>
 					<n-text type="success">欢迎找我聊天 !</n-text>
 					<br><br>
