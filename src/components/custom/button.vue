@@ -7,25 +7,27 @@ const router = useRouter()
 
 const handleClick = () => {
 	if (!props.is_external) {
-		router.push({ path: props.href })
+		router.push({
+			path: props.href
+		})
+
 		return
 	}
+
 	showRedirectExternalWebsiteWarningModal(props.href)
 }
 </script>
 
 <template>
-	<n-button @click="handleClick" class="w-full sm:w-auto max-w-full">
+	<n-button @click="handleClick">
 		<template #icon>
 			<slot name="icon">
-				<Component :is="icon" />
+				<Component :is="icon"/>
 			</slot>
 		</template>
 
 		<slot name="content">
-			<div class="text-sm sm:text-base leading-snug break-words whitespace-normal">
-				<span>{{ props.name }}</span>
-			</div>
+			<n-ellipsis>{{ props.name }}</n-ellipsis>
 		</slot>
 	</n-button>
 </template>
